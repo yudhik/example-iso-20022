@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="4.0" jmeter="4.0 r1823414">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Nusapay Test Scenario" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Top up test scenario" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">100</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">50</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TopUp Request" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;&#xd;
+&lt;Document xmlns=&quot;urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07&quot;&gt;&#xd;
+    &lt;FIToFICstmrCdtTrf&gt;&#xd;
+        &lt;GrpHdr&gt;&#xd;
+            &lt;MsgId&gt;${MsgId}&lt;/MsgId&gt;&#xd;
+            &lt;CreDtTm&gt;${CreDtTm}&lt;/CreDtTm&gt;&#xd;
+            &lt;NbOfTxs&gt;1&lt;/NbOfTxs&gt;&#xd;
+            &lt;SttlmInf&gt;&#xd;
+                &lt;SttlmMtd&gt;INDA&lt;/SttlmMtd&gt;&#xd;
+            &lt;/SttlmInf&gt;&#xd;
+        &lt;/GrpHdr&gt;&#xd;
+        &lt;CdtTrfTxInf&gt;&#xd;
+            &lt;PmtId&gt;&#xd;
+                &lt;EndToEndId&gt;${EndToEndId}-1&lt;/EndToEndId&gt;&#xd;
+                &lt;TxId&gt;${TxId}&lt;/TxId&gt;&#xd;
+            &lt;/PmtId&gt;&#xd;
+            &lt;IntrBkSttlmAmt Ccy=&quot;IDR&quot;&gt;${amount}&lt;/IntrBkSttlmAmt&gt;&#xd;
+            &lt;ChrgBr&gt;DEBT&lt;/ChrgBr&gt;&#xd;
+            &lt;Dbtr&gt;&#xd;
+                &lt;Nm&gt;Hardi&lt;/Nm&gt;&#xd;
+                &lt;Id&gt;&#xd;
+                    &lt;PrvtId&gt;&#xd;
+                        &lt;Othr&gt;&#xd;
+                            &lt;Id&gt;1234567890123456&lt;/Id&gt;&#xd;
+                            &lt;SchmeNm&gt;&#xd;
+                                &lt;Prtry&gt;NIK&lt;/Prtry&gt;&#xd;
+                            &lt;/SchmeNm&gt;&#xd;
+                        &lt;/Othr&gt;&#xd;
+                    &lt;/PrvtId&gt;&#xd;
+                &lt;/Id&gt;&#xd;
+            &lt;/Dbtr&gt;&#xd;
+            &lt;DbtrAcct&gt;&#xd;
+                &lt;Id&gt;&#xd;
+                    &lt;Othr&gt;&#xd;
+                        &lt;Id&gt;0987654321&lt;/Id&gt;&#xd;
+                        &lt;SchmeNm&gt;&#xd;
+                            &lt;Prtry&gt;ACCOUNT_ID&lt;/Prtry&gt;&#xd;
+                        &lt;/SchmeNm&gt;&#xd;
+                    &lt;/Othr&gt;&#xd;
+                &lt;/Id&gt;&#xd;
+            &lt;/DbtrAcct&gt;&#xd;
+            &lt;DbtrAgt&gt;&#xd;
+                &lt;FinInstnId&gt;&#xd;
+                    &lt;BICFI&gt;CENAIDJAXXX&lt;/BICFI&gt;&#xd;
+                    &lt;ClrSysMmbId&gt;&#xd;
+                        &lt;MmbId&gt;BCA&lt;/MmbId&gt;&#xd;
+                    &lt;/ClrSysMmbId&gt;&#xd;
+                &lt;/FinInstnId&gt;&#xd;
+            &lt;/DbtrAgt&gt;&#xd;
+            &lt;CdtrAgt&gt;&#xd;
+                &lt;FinInstnId&gt;&#xd;
+                    &lt;Othr&gt;&#xd;
+                        &lt;Id&gt;NUSAPAY&lt;/Id&gt;&#xd;
+                    &lt;/Othr&gt;&#xd;
+                &lt;/FinInstnId&gt;&#xd;
+            &lt;/CdtrAgt&gt;&#xd;
+            &lt;Cdtr&gt;&#xd;
+                &lt;Nm&gt;Hardi&lt;/Nm&gt;&#xd;
+                &lt;Id&gt;&#xd;
+                    &lt;PrvtId&gt;&#xd;
+                        &lt;Othr&gt;&#xd;
+                            &lt;Id&gt;1234567890123456&lt;/Id&gt;&#xd;
+                            &lt;SchmeNm&gt;&#xd;
+                                &lt;Prtry&gt;NIK&lt;/Prtry&gt;&#xd;
+                            &lt;/SchmeNm&gt;&#xd;
+                        &lt;/Othr&gt;&#xd;
+                    &lt;/PrvtId&gt;&#xd;
+                &lt;/Id&gt;&#xd;
+            &lt;/Cdtr&gt;&#xd;
+            &lt;CdtrAcct&gt;&#xd;
+                &lt;Id&gt;&#xd;
+                    &lt;Othr&gt;&#xd;
+                        &lt;Id&gt;${nusapayAccountId}&lt;/Id&gt;&#xd;
+                        &lt;SchmeNm&gt;&#xd;
+                            &lt;Prtry&gt;ACCOUNT_ID&lt;/Prtry&gt;&#xd;
+                        &lt;/SchmeNm&gt;&#xd;
+                    &lt;/Othr&gt;&#xd;
+                &lt;/Id&gt;&#xd;
+            &lt;/CdtrAcct&gt;&#xd;
+        &lt;/CdtTrfTxInf&gt;&#xd;
+    &lt;/FIToFICstmrCdtTrf&gt;&#xd;
+&lt;/Document&gt;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">localhost</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/topup/account-${accountIdCounter}</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="accountIdCounter" enabled="true">
+            <stringProp name="CounterConfig.start">1</stringProp>
+            <stringProp name="CounterConfig.end"></stringProp>
+            <stringProp name="CounterConfig.incr">0</stringProp>
+            <stringProp name="CounterConfig.name">accountIdCounter</stringProp>
+            <stringProp name="CounterConfig.format"></stringProp>
+            <boolProp name="CounterConfig.per_user">false</boolProp>
+          </CounterConfig>
+          <hashTree/>
+          <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="populate sample request variables" enabled="true">
+            <stringProp name="filename"></stringProp>
+            <stringProp name="parameters"></stringProp>
+            <boolProp name="resetInterpreter">false</boolProp>
+            <stringProp name="script">import java.util.UUID;
+import org.apache.commons.lang3.RandomStringUtils;
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+
+vars.put(&quot;MsgId&quot;, UUID.randomUUID().toString().toUpperCase().replace(&quot;-&quot;,&quot;&quot;));
+GregorianCalendar calendar = new GregorianCalendar();
+calendar.setTime(new Date());
+try {
+  vars.put(&quot;CreDtTm&quot;, DatatypeFactory.newInstance().newXMLGregorianCalendar(calendar).toXMLFormat());
+} catch (DatatypeConfigurationException e) {
+  log.error(&quot;Something went wrong&quot;, e);
+}
+
+vars.put(&quot;EndToEndId&quot;, UUID.randomUUID().toString().toUpperCase().replace(&quot;-&quot;,&quot;&quot;));
+vars.put(&quot;TxId&quot;, UUID.randomUUID().toString().toUpperCase().replace(&quot;-&quot;,&quot;&quot;));
+vars.put(&quot;amount&quot;, RandomStringUtils.randomNumeric(5));
+vars.put(&quot;nusapayAccountId&quot;, &quot;0818&quot; +  RandomStringUtils.randomNumeric(8));
+</stringProp>
+          </BeanShellPreProcessor>
+          <hashTree/>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-type</stringProp>
+                <stringProp name="Header.value">application/xml</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">true</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

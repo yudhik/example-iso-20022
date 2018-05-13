@@ -1,0 +1,1 @@
+CREATE KEYSPACE IF NOT EXISTS demodb with replication = {'class':'SimpleStrategy', 'replication_factor':'3'} and durable_writes=true;
