@@ -18,8 +18,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="Tp" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}CreditorReferenceType2" minOccurs="0"/>
- *         &lt;element name="Ref" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}Max35Text" minOccurs="0"/>
+ *         &lt;element name="Tp" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}CreditorReferenceType2" minOccurs="0"/>
+ *         &lt;element name="Ref" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}Max35Text" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -29,18 +29,18 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "CreditorReferenceInformation2", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07", propOrder = {
+@XmlType(name = "CreditorReferenceInformation2", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", propOrder = {
     "tp",
     "ref"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class CreditorReferenceInformation2 {
 
-    @XmlElement(name = "Tp", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "Tp", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CreditorReferenceType2 tp;
-    @XmlElement(name = "Ref", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "Ref", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String ref;
 
     /**
@@ -51,7 +51,7 @@ public class CreditorReferenceInformation2 {
      *     {@link CreditorReferenceType2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CreditorReferenceType2 getTp() {
         return tp;
     }
@@ -64,7 +64,7 @@ public class CreditorReferenceInformation2 {
      *     {@link CreditorReferenceType2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTp(CreditorReferenceType2 value) {
         this.tp = value;
     }
@@ -77,7 +77,7 @@ public class CreditorReferenceInformation2 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getRef() {
         return ref;
     }
@@ -90,7 +90,7 @@ public class CreditorReferenceInformation2 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setRef(String value) {
         this.ref = value;
     }

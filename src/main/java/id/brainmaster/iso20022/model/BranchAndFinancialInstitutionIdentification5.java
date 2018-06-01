@@ -18,8 +18,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="FinInstnId" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}FinancialInstitutionIdentification8"/>
- *         &lt;element name="BrnchId" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}BranchData2" minOccurs="0"/>
+ *         &lt;element name="FinInstnId" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}FinancialInstitutionIdentification8"/>
+ *         &lt;element name="BrnchId" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}BranchData2" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -29,18 +29,18 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "BranchAndFinancialInstitutionIdentification5", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07", propOrder = {
+@XmlType(name = "BranchAndFinancialInstitutionIdentification5", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", propOrder = {
     "finInstnId",
     "brnchId"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class BranchAndFinancialInstitutionIdentification5 {
 
-    @XmlElement(name = "FinInstnId", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07", required = true)
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "FinInstnId", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected FinancialInstitutionIdentification8 finInstnId;
-    @XmlElement(name = "BrnchId", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "BrnchId", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BranchData2 brnchId;
 
     /**
@@ -51,7 +51,7 @@ public class BranchAndFinancialInstitutionIdentification5 {
      *     {@link FinancialInstitutionIdentification8 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public FinancialInstitutionIdentification8 getFinInstnId() {
         return finInstnId;
     }
@@ -64,7 +64,7 @@ public class BranchAndFinancialInstitutionIdentification5 {
      *     {@link FinancialInstitutionIdentification8 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setFinInstnId(FinancialInstitutionIdentification8 value) {
         this.finInstnId = value;
     }
@@ -77,7 +77,7 @@ public class BranchAndFinancialInstitutionIdentification5 {
      *     {@link BranchData2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BranchData2 getBrnchId() {
         return brnchId;
     }
@@ -90,7 +90,7 @@ public class BranchAndFinancialInstitutionIdentification5 {
      *     {@link BranchData2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setBrnchId(BranchData2 value) {
         this.brnchId = value;
     }

@@ -19,9 +19,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="Mtd" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}RemittanceLocationMethod2Code"/>
- *         &lt;element name="ElctrncAdr" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}Max2048Text" minOccurs="0"/>
- *         &lt;element name="PstlAdr" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}NameAndAddress10" minOccurs="0"/>
+ *         &lt;element name="Mtd" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}RemittanceLocationMethod2Code"/>
+ *         &lt;element name="ElctrncAdr" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}Max2048Text" minOccurs="0"/>
+ *         &lt;element name="PstlAdr" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}NameAndAddress10" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -31,23 +31,23 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "RemittanceLocationDetails1", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07", propOrder = {
+@XmlType(name = "RemittanceLocationDetails1", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", propOrder = {
     "mtd",
     "elctrncAdr",
     "pstlAdr"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class RemittanceLocationDetails1 {
 
-    @XmlElement(name = "Mtd", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07", required = true)
+    @XmlElement(name = "Mtd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected RemittanceLocationMethod2Code mtd;
-    @XmlElement(name = "ElctrncAdr", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "ElctrncAdr", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String elctrncAdr;
-    @XmlElement(name = "PstlAdr", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "PstlAdr", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected NameAndAddress10 pstlAdr;
 
     /**
@@ -58,7 +58,7 @@ public class RemittanceLocationDetails1 {
      *     {@link RemittanceLocationMethod2Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public RemittanceLocationMethod2Code getMtd() {
         return mtd;
     }
@@ -71,7 +71,7 @@ public class RemittanceLocationDetails1 {
      *     {@link RemittanceLocationMethod2Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setMtd(RemittanceLocationMethod2Code value) {
         this.mtd = value;
     }
@@ -84,7 +84,7 @@ public class RemittanceLocationDetails1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getElctrncAdr() {
         return elctrncAdr;
     }
@@ -97,7 +97,7 @@ public class RemittanceLocationDetails1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setElctrncAdr(String value) {
         this.elctrncAdr = value;
     }
@@ -110,7 +110,7 @@ public class RemittanceLocationDetails1 {
      *     {@link NameAndAddress10 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public NameAndAddress10 getPstlAdr() {
         return pstlAdr;
     }
@@ -123,7 +123,7 @@ public class RemittanceLocationDetails1 {
      *     {@link NameAndAddress10 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setPstlAdr(NameAndAddress10 value) {
         this.pstlAdr = value;
     }

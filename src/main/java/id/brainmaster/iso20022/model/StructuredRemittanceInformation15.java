@@ -20,14 +20,14 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="RfrdDocInf" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}ReferredDocumentInformation7" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="RfrdDocAmt" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}RemittanceAmount2" minOccurs="0"/>
- *         &lt;element name="CdtrRefInf" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}CreditorReferenceInformation2" minOccurs="0"/>
- *         &lt;element name="Invcr" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}PartyIdentification125" minOccurs="0"/>
- *         &lt;element name="Invcee" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}PartyIdentification125" minOccurs="0"/>
- *         &lt;element name="TaxRmt" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}TaxInformation7" minOccurs="0"/>
- *         &lt;element name="GrnshmtRmt" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}Garnishment2" minOccurs="0"/>
- *         &lt;element name="AddtlRmtInf" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}Max140Text" maxOccurs="3" minOccurs="0"/>
+ *         &lt;element name="RfrdDocInf" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}ReferredDocumentInformation7" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="RfrdDocAmt" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}RemittanceAmount2" minOccurs="0"/>
+ *         &lt;element name="CdtrRefInf" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}CreditorReferenceInformation2" minOccurs="0"/>
+ *         &lt;element name="Invcr" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}PartyIdentification125" minOccurs="0"/>
+ *         &lt;element name="Invcee" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}PartyIdentification125" minOccurs="0"/>
+ *         &lt;element name="TaxRmt" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}TaxInformation7" minOccurs="0"/>
+ *         &lt;element name="GrnshmtRmt" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}Garnishment2" minOccurs="0"/>
+ *         &lt;element name="AddtlRmtInf" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}Max140Text" maxOccurs="3" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -37,7 +37,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "StructuredRemittanceInformation15", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07", propOrder = {
+@XmlType(name = "StructuredRemittanceInformation15", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", propOrder = {
     "rfrdDocInf",
     "rfrdDocAmt",
     "cdtrRefInf",
@@ -47,32 +47,32 @@ import javax.xml.bind.annotation.XmlType;
     "grnshmtRmt",
     "addtlRmtInf"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class StructuredRemittanceInformation15 {
 
-    @XmlElement(name = "RfrdDocInf", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "RfrdDocInf", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<ReferredDocumentInformation7> rfrdDocInf;
-    @XmlElement(name = "RfrdDocAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "RfrdDocAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected RemittanceAmount2 rfrdDocAmt;
-    @XmlElement(name = "CdtrRefInf", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "CdtrRefInf", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CreditorReferenceInformation2 cdtrRefInf;
-    @XmlElement(name = "Invcr", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "Invcr", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected PartyIdentification125 invcr;
-    @XmlElement(name = "Invcee", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "Invcee", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected PartyIdentification125 invcee;
-    @XmlElement(name = "TaxRmt", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "TaxRmt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected TaxInformation7 taxRmt;
-    @XmlElement(name = "GrnshmtRmt", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "GrnshmtRmt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected Garnishment2 grnshmtRmt;
-    @XmlElement(name = "AddtlRmtInf", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "AddtlRmtInf", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<String> addtlRmtInf;
 
     /**
@@ -97,7 +97,7 @@ public class StructuredRemittanceInformation15 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<ReferredDocumentInformation7> getRfrdDocInf() {
         if (rfrdDocInf == null) {
             rfrdDocInf = new ArrayList<ReferredDocumentInformation7>();
@@ -113,7 +113,7 @@ public class StructuredRemittanceInformation15 {
      *     {@link RemittanceAmount2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public RemittanceAmount2 getRfrdDocAmt() {
         return rfrdDocAmt;
     }
@@ -126,7 +126,7 @@ public class StructuredRemittanceInformation15 {
      *     {@link RemittanceAmount2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setRfrdDocAmt(RemittanceAmount2 value) {
         this.rfrdDocAmt = value;
     }
@@ -139,7 +139,7 @@ public class StructuredRemittanceInformation15 {
      *     {@link CreditorReferenceInformation2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CreditorReferenceInformation2 getCdtrRefInf() {
         return cdtrRefInf;
     }
@@ -152,7 +152,7 @@ public class StructuredRemittanceInformation15 {
      *     {@link CreditorReferenceInformation2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCdtrRefInf(CreditorReferenceInformation2 value) {
         this.cdtrRefInf = value;
     }
@@ -165,7 +165,7 @@ public class StructuredRemittanceInformation15 {
      *     {@link PartyIdentification125 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public PartyIdentification125 getInvcr() {
         return invcr;
     }
@@ -178,7 +178,7 @@ public class StructuredRemittanceInformation15 {
      *     {@link PartyIdentification125 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setInvcr(PartyIdentification125 value) {
         this.invcr = value;
     }
@@ -191,7 +191,7 @@ public class StructuredRemittanceInformation15 {
      *     {@link PartyIdentification125 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public PartyIdentification125 getInvcee() {
         return invcee;
     }
@@ -204,7 +204,7 @@ public class StructuredRemittanceInformation15 {
      *     {@link PartyIdentification125 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setInvcee(PartyIdentification125 value) {
         this.invcee = value;
     }
@@ -217,7 +217,7 @@ public class StructuredRemittanceInformation15 {
      *     {@link TaxInformation7 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public TaxInformation7 getTaxRmt() {
         return taxRmt;
     }
@@ -230,7 +230,7 @@ public class StructuredRemittanceInformation15 {
      *     {@link TaxInformation7 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTaxRmt(TaxInformation7 value) {
         this.taxRmt = value;
     }
@@ -243,7 +243,7 @@ public class StructuredRemittanceInformation15 {
      *     {@link Garnishment2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public Garnishment2 getGrnshmtRmt() {
         return grnshmtRmt;
     }
@@ -256,7 +256,7 @@ public class StructuredRemittanceInformation15 {
      *     {@link Garnishment2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setGrnshmtRmt(Garnishment2 value) {
         this.grnshmtRmt = value;
     }
@@ -283,7 +283,7 @@ public class StructuredRemittanceInformation15 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<String> getAddtlRmtInf() {
         if (addtlRmtInf == null) {
             addtlRmtInf = new ArrayList<String>();

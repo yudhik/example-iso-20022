@@ -20,9 +20,9 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="Id" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}DocumentLineIdentification1" maxOccurs="unbounded"/>
- *         &lt;element name="Desc" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}Max2048Text" minOccurs="0"/>
- *         &lt;element name="Amt" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}RemittanceAmount3" minOccurs="0"/>
+ *         &lt;element name="Id" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}DocumentLineIdentification1" maxOccurs="unbounded"/>
+ *         &lt;element name="Desc" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}Max2048Text" minOccurs="0"/>
+ *         &lt;element name="Amt" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}RemittanceAmount3" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -32,22 +32,22 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "DocumentLineInformation1", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07", propOrder = {
+@XmlType(name = "DocumentLineInformation1", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", propOrder = {
     "id",
     "desc",
     "amt"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class DocumentLineInformation1 {
 
-    @XmlElement(name = "Id", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07", required = true)
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "Id", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<DocumentLineIdentification1> id;
-    @XmlElement(name = "Desc", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "Desc", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String desc;
-    @XmlElement(name = "Amt", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "Amt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected RemittanceAmount3 amt;
 
     /**
@@ -72,7 +72,7 @@ public class DocumentLineInformation1 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<DocumentLineIdentification1> getId() {
         if (id == null) {
             id = new ArrayList<DocumentLineIdentification1>();
@@ -88,7 +88,7 @@ public class DocumentLineInformation1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getDesc() {
         return desc;
     }
@@ -101,7 +101,7 @@ public class DocumentLineInformation1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setDesc(String value) {
         this.desc = value;
     }
@@ -114,7 +114,7 @@ public class DocumentLineInformation1 {
      *     {@link RemittanceAmount3 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public RemittanceAmount3 getAmt() {
         return amt;
     }
@@ -127,7 +127,7 @@ public class DocumentLineInformation1 {
      *     {@link RemittanceAmount3 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAmt(RemittanceAmount3 value) {
         this.amt = value;
     }

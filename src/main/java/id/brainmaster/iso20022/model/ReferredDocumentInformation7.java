@@ -22,10 +22,10 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="Tp" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}ReferredDocumentType4" minOccurs="0"/>
- *         &lt;element name="Nb" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}Max35Text" minOccurs="0"/>
- *         &lt;element name="RltdDt" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}ISODate" minOccurs="0"/>
- *         &lt;element name="LineDtls" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}DocumentLineInformation1" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="Tp" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}ReferredDocumentType4" minOccurs="0"/>
+ *         &lt;element name="Nb" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}Max35Text" minOccurs="0"/>
+ *         &lt;element name="RltdDt" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}ISODate" minOccurs="0"/>
+ *         &lt;element name="LineDtls" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}DocumentLineInformation1" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -35,27 +35,27 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ReferredDocumentInformation7", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07", propOrder = {
+@XmlType(name = "ReferredDocumentInformation7", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", propOrder = {
     "tp",
     "nb",
     "rltdDt",
     "lineDtls"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class ReferredDocumentInformation7 {
 
-    @XmlElement(name = "Tp", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "Tp", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected ReferredDocumentType4 tp;
-    @XmlElement(name = "Nb", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "Nb", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String nb;
-    @XmlElement(name = "RltdDt", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
+    @XmlElement(name = "RltdDt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
     @XmlSchemaType(name = "date")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected XMLGregorianCalendar rltdDt;
-    @XmlElement(name = "LineDtls", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "LineDtls", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<DocumentLineInformation1> lineDtls;
 
     /**
@@ -66,7 +66,7 @@ public class ReferredDocumentInformation7 {
      *     {@link ReferredDocumentType4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public ReferredDocumentType4 getTp() {
         return tp;
     }
@@ -79,7 +79,7 @@ public class ReferredDocumentInformation7 {
      *     {@link ReferredDocumentType4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTp(ReferredDocumentType4 value) {
         this.tp = value;
     }
@@ -92,7 +92,7 @@ public class ReferredDocumentInformation7 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getNb() {
         return nb;
     }
@@ -105,7 +105,7 @@ public class ReferredDocumentInformation7 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setNb(String value) {
         this.nb = value;
     }
@@ -118,7 +118,7 @@ public class ReferredDocumentInformation7 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public XMLGregorianCalendar getRltdDt() {
         return rltdDt;
     }
@@ -131,7 +131,7 @@ public class ReferredDocumentInformation7 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setRltdDt(XMLGregorianCalendar value) {
         this.rltdDt = value;
     }
@@ -158,7 +158,7 @@ public class ReferredDocumentInformation7 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<DocumentLineInformation1> getLineDtls() {
         if (lineDtls == null) {
             lineDtls = new ArrayList<DocumentLineInformation1>();

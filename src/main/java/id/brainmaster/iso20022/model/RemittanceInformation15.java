@@ -20,8 +20,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="Ustrd" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}Max140Text" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="Strd" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}StructuredRemittanceInformation15" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="Ustrd" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}Max140Text" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="Strd" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}StructuredRemittanceInformation15" maxOccurs="unbounded" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -31,18 +31,18 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "RemittanceInformation15", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07", propOrder = {
+@XmlType(name = "RemittanceInformation15", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", propOrder = {
     "ustrd",
     "strd"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class RemittanceInformation15 {
 
-    @XmlElement(name = "Ustrd", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "Ustrd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<String> ustrd;
-    @XmlElement(name = "Strd", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "Strd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<StructuredRemittanceInformation15> strd;
 
     /**
@@ -67,7 +67,7 @@ public class RemittanceInformation15 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<String> getUstrd() {
         if (ustrd == null) {
             ustrd = new ArrayList<String>();
@@ -97,7 +97,7 @@ public class RemittanceInformation15 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<StructuredRemittanceInformation15> getStrd() {
         if (strd == null) {
             strd = new ArrayList<StructuredRemittanceInformation15>();

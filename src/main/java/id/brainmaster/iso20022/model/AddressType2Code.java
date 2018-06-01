@@ -25,9 +25,9 @@ import javax.xml.bind.annotation.XmlType;
  * </pre>
  * 
  */
-@XmlType(name = "AddressType2Code", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
+@XmlType(name = "AddressType2Code", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
 @XmlEnum
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public enum AddressType2Code {
 
     ADDR,

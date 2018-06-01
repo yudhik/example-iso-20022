@@ -1,4 +1,4 @@
-<Document xmlns="iso:std:iso:20022:tech:xsd:camt.053.001.07">
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:iso20022">
   <BkToCstmrStmt>
     <GrpHdr>
       <MsgId>string</MsgId>

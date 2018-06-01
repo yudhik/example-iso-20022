@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07">
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:iso20022">
     <FIToFICstmrCdtTrf>
         <GrpHdr>
             <MsgId>42E1037861BE4EF9BDF0CE57B4ECB083</MsgId>

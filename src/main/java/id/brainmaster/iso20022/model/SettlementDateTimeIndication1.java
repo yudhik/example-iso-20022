@@ -20,8 +20,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="DbtDtTm" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}ISODateTime" minOccurs="0"/>
- *         &lt;element name="CdtDtTm" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}ISODateTime" minOccurs="0"/>
+ *         &lt;element name="DbtDtTm" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}ISODateTime" minOccurs="0"/>
+ *         &lt;element name="CdtDtTm" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}ISODateTime" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -31,20 +31,20 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "SettlementDateTimeIndication1", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07", propOrder = {
+@XmlType(name = "SettlementDateTimeIndication1", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", propOrder = {
     "dbtDtTm",
     "cdtDtTm"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class SettlementDateTimeIndication1 {
 
-    @XmlElement(name = "DbtDtTm", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
+    @XmlElement(name = "DbtDtTm", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
     @XmlSchemaType(name = "dateTime")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected XMLGregorianCalendar dbtDtTm;
-    @XmlElement(name = "CdtDtTm", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
+    @XmlElement(name = "CdtDtTm", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
     @XmlSchemaType(name = "dateTime")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected XMLGregorianCalendar cdtDtTm;
 
     /**
@@ -55,7 +55,7 @@ public class SettlementDateTimeIndication1 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public XMLGregorianCalendar getDbtDtTm() {
         return dbtDtTm;
     }
@@ -68,7 +68,7 @@ public class SettlementDateTimeIndication1 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setDbtDtTm(XMLGregorianCalendar value) {
         this.dbtDtTm = value;
     }
@@ -81,7 +81,7 @@ public class SettlementDateTimeIndication1 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public XMLGregorianCalendar getCdtDtTm() {
         return cdtDtTm;
     }
@@ -94,7 +94,7 @@ public class SettlementDateTimeIndication1 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCdtDtTm(XMLGregorianCalendar value) {
         this.cdtDtTm = value;
     }

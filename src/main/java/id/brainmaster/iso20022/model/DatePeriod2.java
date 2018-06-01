@@ -20,8 +20,8 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="FrDt" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}ISODate"/>
- *         &lt;element name="ToDt" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}ISODate"/>
+ *         &lt;element name="FrDt" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}ISODate"/>
+ *         &lt;element name="ToDt" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}ISODate"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -31,20 +31,20 @@ import javax.xml.datatype.XMLGregorianCalendar;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "DatePeriod2", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07", propOrder = {
+@XmlType(name = "DatePeriod2", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", propOrder = {
     "frDt",
     "toDt"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class DatePeriod2 {
 
-    @XmlElement(name = "FrDt", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07", required = true)
+    @XmlElement(name = "FrDt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
     @XmlSchemaType(name = "date")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected XMLGregorianCalendar frDt;
-    @XmlElement(name = "ToDt", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07", required = true)
+    @XmlElement(name = "ToDt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
     @XmlSchemaType(name = "date")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected XMLGregorianCalendar toDt;
 
     /**
@@ -55,7 +55,7 @@ public class DatePeriod2 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public XMLGregorianCalendar getFrDt() {
         return frDt;
     }
@@ -68,7 +68,7 @@ public class DatePeriod2 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setFrDt(XMLGregorianCalendar value) {
         this.frDt = value;
     }
@@ -81,7 +81,7 @@ public class DatePeriod2 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public XMLGregorianCalendar getToDt() {
         return toDt;
     }
@@ -94,7 +94,7 @@ public class DatePeriod2 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setToDt(XMLGregorianCalendar value) {
         this.toDt = value;
     }

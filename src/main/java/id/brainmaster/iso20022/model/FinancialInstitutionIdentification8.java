@@ -18,11 +18,11 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="BICFI" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}BICFIIdentifier" minOccurs="0"/>
- *         &lt;element name="ClrSysMmbId" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}ClearingSystemMemberIdentification2" minOccurs="0"/>
- *         &lt;element name="Nm" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}Max140Text" minOccurs="0"/>
- *         &lt;element name="PstlAdr" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}PostalAddress6" minOccurs="0"/>
- *         &lt;element name="Othr" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}GenericFinancialIdentification1" minOccurs="0"/>
+ *         &lt;element name="BICFI" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}BICFIIdentifier" minOccurs="0"/>
+ *         &lt;element name="ClrSysMmbId" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}ClearingSystemMemberIdentification2" minOccurs="0"/>
+ *         &lt;element name="Nm" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}Max140Text" minOccurs="0"/>
+ *         &lt;element name="PstlAdr" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}PostalAddress6" minOccurs="0"/>
+ *         &lt;element name="Othr" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}GenericFinancialIdentification1" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -32,30 +32,30 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "FinancialInstitutionIdentification8", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07", propOrder = {
+@XmlType(name = "FinancialInstitutionIdentification8", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", propOrder = {
     "bicfi",
     "clrSysMmbId",
     "nm",
     "pstlAdr",
     "othr"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class FinancialInstitutionIdentification8 {
 
-    @XmlElement(name = "BICFI", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "BICFI", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String bicfi;
-    @XmlElement(name = "ClrSysMmbId", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "ClrSysMmbId", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected ClearingSystemMemberIdentification2 clrSysMmbId;
-    @XmlElement(name = "Nm", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "Nm", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String nm;
-    @XmlElement(name = "PstlAdr", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "PstlAdr", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected PostalAddress6 pstlAdr;
-    @XmlElement(name = "Othr", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "Othr", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected GenericFinancialIdentification1 othr;
 
     /**
@@ -66,7 +66,7 @@ public class FinancialInstitutionIdentification8 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getBICFI() {
         return bicfi;
     }
@@ -79,7 +79,7 @@ public class FinancialInstitutionIdentification8 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setBICFI(String value) {
         this.bicfi = value;
     }
@@ -92,7 +92,7 @@ public class FinancialInstitutionIdentification8 {
      *     {@link ClearingSystemMemberIdentification2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public ClearingSystemMemberIdentification2 getClrSysMmbId() {
         return clrSysMmbId;
     }
@@ -105,7 +105,7 @@ public class FinancialInstitutionIdentification8 {
      *     {@link ClearingSystemMemberIdentification2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setClrSysMmbId(ClearingSystemMemberIdentification2 value) {
         this.clrSysMmbId = value;
     }
@@ -118,7 +118,7 @@ public class FinancialInstitutionIdentification8 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getNm() {
         return nm;
     }
@@ -131,7 +131,7 @@ public class FinancialInstitutionIdentification8 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setNm(String value) {
         this.nm = value;
     }
@@ -144,7 +144,7 @@ public class FinancialInstitutionIdentification8 {
      *     {@link PostalAddress6 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public PostalAddress6 getPstlAdr() {
         return pstlAdr;
     }
@@ -157,7 +157,7 @@ public class FinancialInstitutionIdentification8 {
      *     {@link PostalAddress6 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setPstlAdr(PostalAddress6 value) {
         this.pstlAdr = value;
     }
@@ -170,7 +170,7 @@ public class FinancialInstitutionIdentification8 {
      *     {@link GenericFinancialIdentification1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public GenericFinancialIdentification1 getOthr() {
         return othr;
     }
@@ -183,7 +183,7 @@ public class FinancialInstitutionIdentification8 {
      *     {@link GenericFinancialIdentification1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setOthr(GenericFinancialIdentification1 value) {
         this.othr = value;
     }

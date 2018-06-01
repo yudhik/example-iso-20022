@@ -20,12 +20,12 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="DuePyblAmt" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}ActiveOrHistoricCurrencyAndAmount" minOccurs="0"/>
- *         &lt;element name="DscntApldAmt" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}DiscountAmountAndType1" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="CdtNoteAmt" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}ActiveOrHistoricCurrencyAndAmount" minOccurs="0"/>
- *         &lt;element name="TaxAmt" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}TaxAmountAndType1" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="AdjstmntAmtAndRsn" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}DocumentAdjustment1" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="RmtdAmt" type="{urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07}ActiveOrHistoricCurrencyAndAmount" minOccurs="0"/>
+ *         &lt;element name="DuePyblAmt" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}ActiveOrHistoricCurrencyAndAmount" minOccurs="0"/>
+ *         &lt;element name="DscntApldAmt" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}DiscountAmountAndType1" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="CdtNoteAmt" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}ActiveOrHistoricCurrencyAndAmount" minOccurs="0"/>
+ *         &lt;element name="TaxAmt" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}TaxAmountAndType1" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="AdjstmntAmtAndRsn" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}DocumentAdjustment1" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="RmtdAmt" type="{urn:iso:std:iso:20022:tech:xsd:iso20022}ActiveOrHistoricCurrencyAndAmount" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -35,7 +35,7 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "RemittanceAmount3", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07", propOrder = {
+@XmlType(name = "RemittanceAmount3", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", propOrder = {
     "duePyblAmt",
     "dscntApldAmt",
     "cdtNoteAmt",
@@ -43,26 +43,26 @@ import javax.xml.bind.annotation.XmlType;
     "adjstmntAmtAndRsn",
     "rmtdAmt"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class RemittanceAmount3 {
 
-    @XmlElement(name = "DuePyblAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "DuePyblAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected ActiveOrHistoricCurrencyAndAmount duePyblAmt;
-    @XmlElement(name = "DscntApldAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "DscntApldAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<DiscountAmountAndType1> dscntApldAmt;
-    @XmlElement(name = "CdtNoteAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "CdtNoteAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected ActiveOrHistoricCurrencyAndAmount cdtNoteAmt;
-    @XmlElement(name = "TaxAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "TaxAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<TaxAmountAndType1> taxAmt;
-    @XmlElement(name = "AdjstmntAmtAndRsn", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "AdjstmntAmtAndRsn", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<DocumentAdjustment1> adjstmntAmtAndRsn;
-    @XmlElement(name = "RmtdAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:pacs.008.001.07")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @XmlElement(name = "RmtdAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected ActiveOrHistoricCurrencyAndAmount rmtdAmt;
 
     /**
@@ -73,7 +73,7 @@ public class RemittanceAmount3 {
      *     {@link ActiveOrHistoricCurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public ActiveOrHistoricCurrencyAndAmount getDuePyblAmt() {
         return duePyblAmt;
     }
@@ -86,7 +86,7 @@ public class RemittanceAmount3 {
      *     {@link ActiveOrHistoricCurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setDuePyblAmt(ActiveOrHistoricCurrencyAndAmount value) {
         this.duePyblAmt = value;
     }
@@ -113,7 +113,7 @@ public class RemittanceAmount3 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<DiscountAmountAndType1> getDscntApldAmt() {
         if (dscntApldAmt == null) {
             dscntApldAmt = new ArrayList<DiscountAmountAndType1>();
@@ -129,7 +129,7 @@ public class RemittanceAmount3 {
      *     {@link ActiveOrHistoricCurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public ActiveOrHistoricCurrencyAndAmount getCdtNoteAmt() {
         return cdtNoteAmt;
     }
@@ -142,7 +142,7 @@ public class RemittanceAmount3 {
      *     {@link ActiveOrHistoricCurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCdtNoteAmt(ActiveOrHistoricCurrencyAndAmount value) {
         this.cdtNoteAmt = value;
     }
@@ -169,7 +169,7 @@ public class RemittanceAmount3 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<TaxAmountAndType1> getTaxAmt() {
         if (taxAmt == null) {
             taxAmt = new ArrayList<TaxAmountAndType1>();
@@ -199,7 +199,7 @@ public class RemittanceAmount3 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<DocumentAdjustment1> getAdjstmntAmtAndRsn() {
         if (adjstmntAmtAndRsn == null) {
             adjstmntAmtAndRsn = new ArrayList<DocumentAdjustment1>();
@@ -215,7 +215,7 @@ public class RemittanceAmount3 {
      *     {@link ActiveOrHistoricCurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public ActiveOrHistoricCurrencyAndAmount getRmtdAmt() {
         return rmtdAmt;
     }
@@ -228,7 +228,7 @@ public class RemittanceAmount3 {
      *     {@link ActiveOrHistoricCurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-05-01T07:05:51+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
+    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setRmtdAmt(ActiveOrHistoricCurrencyAndAmount value) {
         this.rmtdAmt = value;
     }
