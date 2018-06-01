@@ -185,7 +185,7 @@ vars.put(&quot;nusapayAccountId&quot;, &quot;0818&quot; +  RandomStringUtils.ran
               <latency>true</latency>
               <timestamp>true</timestamp>
               <success>true</success>
-              <label>true</label>
+              <xmlValue>true</xmlValue>
               <code>true</code>
               <message>true</message>
               <threadName>true</threadName>
@@ -221,7 +221,7 @@ vars.put(&quot;nusapayAccountId&quot;, &quot;0818&quot; +  RandomStringUtils.ran
               <latency>true</latency>
               <timestamp>true</timestamp>
               <success>true</success>
-              <label>true</label>
+              <xmlValue>true</xmlValue>
               <code>true</code>
               <message>true</message>
               <threadName>true</threadName>

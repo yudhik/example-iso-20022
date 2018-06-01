@@ -3,7 +3,7 @@ package id.brainmaster.iso20022.service;
 import id.brainmaster.iso20022.entity.Transaction;
 import id.brainmaster.iso20022.model.Document;
 import id.brainmaster.iso20022.util.Iso20022TransactionHelper;
-import id.brainmaster.iso20022.util.TransactionType;
+import id.brainmaster.iso20022.entity.TransactionType;
 import id.brainmaster.iso20022.repository.AsyncTransactionByCustomerRepository;
 import id.brainmaster.iso20022.repository.TransactionByCustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;

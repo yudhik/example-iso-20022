@@ -1,7 +1,9 @@
 package id.brainmaster.iso20022.entity;
 
+import com.datastax.driver.core.DataType;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.springframework.data.cassandra.core.mapping.CassandraType;
 import org.springframework.data.cassandra.core.mapping.Column;
 import org.springframework.data.cassandra.core.mapping.PrimaryKey;
 import org.springframework.data.cassandra.core.mapping.Table;
@@ -17,8 +19,13 @@ public class Transaction implements Serializable {
     @Column("amount")
     private BigDecimal amount;
 
-    @Column("transaction_type")
-    private String transactionType;
+    @Column("credit_debit")
+    @CassandraType(type = DataType.Name.TEXT)
+    private CreditDebitIndicator creditDebitIndicator;
+
+    @Column("transactionCode")
+    @CassandraType(type = DataType.Name.TEXT)
+    private TransactionCode transactionCode;
 
     @Column("source_name")
     private String sourceName;
@@ -35,10 +42,13 @@ public class Transaction implements Serializable {
     @Column("end_to_end_id")
     private String endToEndId;
 
-    public Transaction(TransactionKey transactionKey, BigDecimal amount, String transactionType, String sourceName, String sourceId, String destinationName, String destinationId, String endToEndId) {
+
+
+    public Transaction(TransactionKey transactionKey, BigDecimal amount, CreditDebitIndicator creditDebitIndicator,
+                       String sourceName, String sourceId, String destinationName, String destinationId, String endToEndId) {
         this.transactionKey = transactionKey;
         this.amount = amount;
-        this.transactionType = transactionType;
+        this.creditDebitIndicator = creditDebitIndicator;
         this.sourceName = sourceName;
         this.sourceId = sourceId;
         this.destinationName = destinationName;
@@ -62,12 +72,12 @@ public class Transaction implements Serializable {
         this.amount = amount;
     }
 
-    public String getTransactionType() {
-        return transactionType;
+    public CreditDebitIndicator getCreditDebitIndicator() {
+        return creditDebitIndicator;
     }
 
-    public void setTransactionType(String transactionType) {
-        this.transactionType = transactionType;
+    public void setCreditDebitIndicator(CreditDebitIndicator creditDebitIndicator) {
+        this.creditDebitIndicator = creditDebitIndicator;
     }
 
     public String getSourceName() {

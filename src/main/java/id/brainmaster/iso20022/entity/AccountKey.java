@@ -1,8 +1,6 @@
 package id.brainmaster.iso20022.entity;
 
 import com.datastax.driver.core.DataType;
-import id.brainmaster.iso20022.util.Currency;
-import id.brainmaster.iso20022.util.WalletType;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.springframework.data.cassandra.core.cql.Ordering;
