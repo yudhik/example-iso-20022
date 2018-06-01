@@ -1,11 +1,12 @@
 package id.brainmaster.iso20022.service;
 
+import id.brainmaster.iso20022.entity.CreditDebitIndicator;
 import id.brainmaster.iso20022.entity.Transaction;
+import id.brainmaster.iso20022.entity.TransactionCode;
 import id.brainmaster.iso20022.model.Document;
-import id.brainmaster.iso20022.util.Iso20022TransactionHelper;
-import id.brainmaster.iso20022.entity.TransactionType;
 import id.brainmaster.iso20022.repository.AsyncTransactionByCustomerRepository;
 import id.brainmaster.iso20022.repository.TransactionByCustomerRepository;
+import id.brainmaster.iso20022.util.Iso20022TransactionHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Slice;
@@ -24,17 +25,24 @@ public class TransactionService {
     @Autowired
     private TransactionByCustomerRepository transactionByCustomerRepository;
 
-    public Flux<Transaction> saveTopUpTransactionAsync(Document document, String accountId) {
-        Set<Transaction> transactions = Iso20022TransactionHelper.populateTransaction(document.getFIToFICstmrCdtTrf(), accountId, TransactionType.TOPUP.name());
-        return asyncTransactionByCustomerRepository.saveAll(transactions).log().onErrorReturn(null);
+    public Slice<Transaction> getTransactionHistoryByCustomer(String accountId, Date startDate, Date endDate, Pageable pageable) {
+        return transactionByCustomerRepository.findAllByTransactionKeyAccountIdAndTransactionKeyCreationDateIsBetween(accountId, startDate, endDate,
+                pageable);
     }
 
     public Iterable<Transaction> saveTopUpTransaction(Document document, String accountId) {
-        Set<Transaction> transactions = Iso20022TransactionHelper.populateTransaction(document.getFIToFICstmrCdtTrf(), accountId, TransactionType.TOPUP.name());
-        return transactionByCustomerRepository.saveAll(transactions);
+        return transactionByCustomerRepository.saveAll(extractTransactionFromDocumentWith(document, accountId, CreditDebitIndicator.CREDIT,
+                TransactionCode.TOPUP, null));
     }
 
-    public Slice<Transaction> getTransactionHistoryByCustomer(String accountId, Date startDate, Date endDate, Pageable pageable) {
-        return transactionByCustomerRepository.findAllByTransactionKeyAccountIdAndTransactionKeyCreationDateIsBetween(accountId,startDate,endDate,pageable);
+    public Flux<Transaction> saveTopUpTransactionAsync(Document document, String accountId) {
+        return asyncTransactionByCustomerRepository.saveAll(extractTransactionFromDocumentWith(document, accountId, CreditDebitIndicator.CREDIT,
+                TransactionCode.TOPUP, null)).log().onErrorReturn(null);
+    }
+
+    private Set<Transaction> extractTransactionFromDocumentWith(final Document document, final String accountId,
+            final CreditDebitIndicator creditDebitIndicator, final TransactionCode transactionCode, final String reference) {
+        return Iso20022TransactionHelper.populateTransaction(document.getFIToFICstmrCdtTrf(), accountId,
+                creditDebitIndicator, transactionCode, reference);
     }
 }

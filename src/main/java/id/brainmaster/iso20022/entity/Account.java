@@ -19,7 +19,6 @@ public class Account implements Serializable {
     private boolean locked;
 
     public Account() {
-
     }
 
     public Account(AccountKey accountKey, String customerName, boolean locked) {
@@ -32,20 +31,20 @@ public class Account implements Serializable {
         return accountKey;
     }
 
-    public void setAccountKey(AccountKey accountKey) {
-        this.accountKey = accountKey;
-    }
-
     public String getCustomerName() {
         return customerName;
     }
 
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
-    }
-
     public boolean isLocked() {
         return locked;
+    }
+
+    public void setAccountKey(AccountKey accountKey) {
+        this.accountKey = accountKey;
+    }
+
+    public void setCustomerName(String customerName) {
+        this.customerName = customerName;
     }
 
     public void setLocked(boolean locked) {

@@ -39,85 +39,71 @@ public class Transaction implements Serializable {
     @Column("destination_id")
     private String destinationId;
 
+    @Column("reference")
+    private String reference;
+
     @Column("end_to_end_id")
     private String endToEndId;
 
-
-
-    public Transaction(TransactionKey transactionKey, BigDecimal amount, CreditDebitIndicator creditDebitIndicator,
-                       String sourceName, String sourceId, String destinationName, String destinationId, String endToEndId) {
+    public Transaction(TransactionKey transactionKey, BigDecimal amount, CreditDebitIndicator creditDebitIndicator, TransactionCode transactionCode,
+                       String sourceName, String sourceId, String destinationName, String destinationId, String reference, String endToEndId) {
         this.transactionKey = transactionKey;
         this.amount = amount;
         this.creditDebitIndicator = creditDebitIndicator;
+        this.transactionCode = transactionCode;
         this.sourceName = sourceName;
         this.sourceId = sourceId;
         this.destinationName = destinationName;
         this.destinationId = destinationId;
+        this.reference = reference;
         this.endToEndId = endToEndId;
-    }
-
-    public TransactionKey getTransactionKey() {
-        return transactionKey;
-    }
-
-    public void setTransactionKey(TransactionKey transactionKey) {
-        this.transactionKey = transactionKey;
     }
 
     public BigDecimal getAmount() {
         return amount;
     }
 
-    public void setAmount(BigDecimal amount) {
-        this.amount = amount;
-    }
-
     public CreditDebitIndicator getCreditDebitIndicator() {
         return creditDebitIndicator;
-    }
-
-    public void setCreditDebitIndicator(CreditDebitIndicator creditDebitIndicator) {
-        this.creditDebitIndicator = creditDebitIndicator;
-    }
-
-    public String getSourceName() {
-        return sourceName;
-    }
-
-    public void setSourceName(String sourceName) {
-        this.sourceName = sourceName;
-    }
-
-    public String getSourceId() {
-        return sourceId;
-    }
-
-    public void setSourceId(String sourceId) {
-        this.sourceId = sourceId;
-    }
-
-    public String getDestinationName() {
-        return destinationName;
-    }
-
-    public void setDestinationName(String destinationName) {
-        this.destinationName = destinationName;
     }
 
     public String getDestinationId() {
         return destinationId;
     }
 
-    public void setDestinationId(String destinationId) {
-        this.destinationId = destinationId;
+    public String getDestinationName() {
+        return destinationName;
     }
 
     public String getEndToEndId() {
         return endToEndId;
     }
 
-    public void setEndToEndId(String endToEndId) {
-        this.endToEndId = endToEndId;
+    public String getReference() {
+        return reference;
+    }
+
+    public String getSourceId() {
+        return sourceId;
+    }
+
+    public String getSourceName() {
+        return sourceName;
+    }
+
+    public TransactionCode getTransactionCode() {
+        return transactionCode;
+    }
+
+    public TransactionKey getTransactionKey() {
+        return transactionKey;
+    }
+
+    @Override
+    public int hashCode() {
+        return new HashCodeBuilder(17, 37)
+                .append(transactionKey)
+                .toHashCode();
     }
 
     @Override
@@ -133,10 +119,43 @@ public class Transaction implements Serializable {
                 .isEquals();
     }
 
-    @Override
-    public int hashCode() {
-        return new HashCodeBuilder(17, 37)
-                .append(transactionKey)
-                .toHashCode();
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
+    }
+
+    public void setCreditDebitIndicator(CreditDebitIndicator creditDebitIndicator) {
+        this.creditDebitIndicator = creditDebitIndicator;
+    }
+
+    public void setDestinationId(String destinationId) {
+        this.destinationId = destinationId;
+    }
+
+    public void setDestinationName(String destinationName) {
+        this.destinationName = destinationName;
+    }
+
+    public void setEndToEndId(String endToEndId) {
+        this.endToEndId = endToEndId;
+    }
+
+    public void setReference(String reference) {
+        this.reference = reference;
+    }
+
+    public void setSourceId(String sourceId) {
+        this.sourceId = sourceId;
+    }
+
+    public void setSourceName(String sourceName) {
+        this.sourceName = sourceName;
+    }
+
+    public void setTransactionCode(TransactionCode transactionCode) {
+        this.transactionCode = transactionCode;
+    }
+
+    public void setTransactionKey(TransactionKey transactionKey) {
+        this.transactionKey = transactionKey;
     }
 }

@@ -11,6 +11,12 @@ import org.springframework.data.cassandra.repository.config.EnableReactiveCassan
 @EnableReactiveCassandraRepositories(basePackages = "id.brainmaster.iso20022.repository")
 public class CassandraConfig extends AbstractReactiveCassandraConfiguration {
 
+    @Bean
+    public CassandraMappingContext cassandraMapping()
+            throws ClassNotFoundException {
+        return new CassandraMappingContext();
+    }
+
     @Override
     protected String getKeyspaceName() {
         return "demodb";
@@ -23,12 +29,6 @@ public class CassandraConfig extends AbstractReactiveCassandraConfiguration {
         cluster.setContactPoints("127.0.0.1");
         cluster.setPort(9142);
         return cluster;
-    }
-
-    @Bean
-    public CassandraMappingContext cassandraMapping()
-            throws ClassNotFoundException {
-        return new CassandraMappingContext();
     }
 
 }

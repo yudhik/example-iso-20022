@@ -1,5 +1,5 @@
 package id.brainmaster.iso20022.entity;
 
 public enum TransactionType {
-    TOPUP,TRANSFER,WITHDRAWAL;
+    TOPUP, ;
 }

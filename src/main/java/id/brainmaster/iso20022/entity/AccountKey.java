@@ -26,7 +26,7 @@ public class AccountKey implements Serializable {
     @CassandraType(type = DataType.Name.TEXT)
     private final Currency currency;
 
-    @PrimaryKeyColumn (value = "creation_date", type = PrimaryKeyType.CLUSTERED, ordinal = 4, ordering = Ordering.ASCENDING)
+    @PrimaryKeyColumn(value = "creation_date", type = PrimaryKeyType.CLUSTERED, ordinal = 4, ordering = Ordering.ASCENDING)
     private final Date creationDate;
 
     public AccountKey(String accountId, WalletType walletType, Currency currency, Date creationDate) {
@@ -40,16 +40,25 @@ public class AccountKey implements Serializable {
         return accountId;
     }
 
-    public WalletType getWalletType() {
-        return walletType;
+    public Date getCreationDate() {
+        return creationDate;
     }
 
     public Currency getCurrency() {
         return currency;
     }
 
-    public Date getCreationDate() {
-        return creationDate;
+    public WalletType getWalletType() {
+        return walletType;
+    }
+
+    @Override
+    public int hashCode() {
+        return new HashCodeBuilder(17, 37)
+                .append(accountId)
+                .append(walletType)
+                .append(currency)
+                .toHashCode();
     }
 
     @Override
@@ -65,14 +74,5 @@ public class AccountKey implements Serializable {
                 .append(walletType, that.walletType)
                 .append(currency, that.currency)
                 .isEquals();
-    }
-
-    @Override
-    public int hashCode() {
-        return new HashCodeBuilder(17, 37)
-                .append(accountId)
-                .append(walletType)
-                .append(currency)
-                .toHashCode();
     }
 }

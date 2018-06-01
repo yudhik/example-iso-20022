@@ -27,16 +27,24 @@ public class TransactionKey implements Serializable {
         this.creationDate = creationDate;
     }
 
-    public String getTransactionId() {
-        return transactionId;
-    }
-
     public String getAccountId() {
         return accountId;
     }
 
     public Date getCreationDate() {
         return creationDate;
+    }
+
+    public String getTransactionId() {
+        return transactionId;
+    }
+
+    @Override
+    public int hashCode() {
+        return new HashCodeBuilder(17, 37)
+                .append(transactionId)
+                .append(accountId)
+                .toHashCode();
     }
 
     @Override
@@ -51,13 +59,5 @@ public class TransactionKey implements Serializable {
                 .append(transactionId, that.transactionId)
                 .append(accountId, that.accountId)
                 .isEquals();
-    }
-
-    @Override
-    public int hashCode() {
-        return new HashCodeBuilder(17, 37)
-                .append(transactionId)
-                .append(accountId)
-                .toHashCode();
     }
 }
