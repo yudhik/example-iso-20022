@@ -1,7 +1,6 @@
 
 package id.brainmaster.iso20022.model;
 
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -33,14 +32,11 @@ import javax.xml.bind.annotation.XmlType;
     "evtTp",
     "evtId"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class CorporateAction9 {
 
     @XmlElement(name = "EvtTp", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String evtTp;
     @XmlElement(name = "EvtId", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String evtId;
 
     /**
@@ -51,7 +47,6 @@ public class CorporateAction9 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getEvtTp() {
         return evtTp;
     }
@@ -64,7 +59,6 @@ public class CorporateAction9 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setEvtTp(String value) {
         this.evtTp = value;
     }
@@ -77,7 +71,6 @@ public class CorporateAction9 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getEvtId() {
         return evtId;
     }
@@ -90,7 +83,6 @@ public class CorporateAction9 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setEvtId(String value) {
         this.evtId = value;
     }

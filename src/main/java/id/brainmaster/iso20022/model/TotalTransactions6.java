@@ -3,7 +3,6 @@ package id.brainmaster.iso20022.model;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -39,20 +38,15 @@ import javax.xml.bind.annotation.XmlType;
     "ttlDbtNtries",
     "ttlNtriesPerBkTxCd"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class TotalTransactions6 {
 
     @XmlElement(name = "TtlNtries", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected NumberAndSumOfTransactions4 ttlNtries;
     @XmlElement(name = "TtlCdtNtries", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected NumberAndSumOfTransactions1 ttlCdtNtries;
     @XmlElement(name = "TtlDbtNtries", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected NumberAndSumOfTransactions1 ttlDbtNtries;
     @XmlElement(name = "TtlNtriesPerBkTxCd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<TotalsPerBankTransactionCode5> ttlNtriesPerBkTxCd;
 
     /**
@@ -63,7 +57,6 @@ public class TotalTransactions6 {
      *     {@link NumberAndSumOfTransactions4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public NumberAndSumOfTransactions4 getTtlNtries() {
         return ttlNtries;
     }
@@ -76,7 +69,6 @@ public class TotalTransactions6 {
      *     {@link NumberAndSumOfTransactions4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTtlNtries(NumberAndSumOfTransactions4 value) {
         this.ttlNtries = value;
     }
@@ -89,7 +81,6 @@ public class TotalTransactions6 {
      *     {@link NumberAndSumOfTransactions1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public NumberAndSumOfTransactions1 getTtlCdtNtries() {
         return ttlCdtNtries;
     }
@@ -102,7 +93,6 @@ public class TotalTransactions6 {
      *     {@link NumberAndSumOfTransactions1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTtlCdtNtries(NumberAndSumOfTransactions1 value) {
         this.ttlCdtNtries = value;
     }
@@ -115,7 +105,6 @@ public class TotalTransactions6 {
      *     {@link NumberAndSumOfTransactions1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public NumberAndSumOfTransactions1 getTtlDbtNtries() {
         return ttlDbtNtries;
     }
@@ -128,7 +117,6 @@ public class TotalTransactions6 {
      *     {@link NumberAndSumOfTransactions1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTtlDbtNtries(NumberAndSumOfTransactions1 value) {
         this.ttlDbtNtries = value;
     }
@@ -155,7 +143,6 @@ public class TotalTransactions6 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<TotalsPerBankTransactionCode5> getTtlNtriesPerBkTxCd() {
         if (ttlNtriesPerBkTxCd == null) {
             ttlNtriesPerBkTxCd = new ArrayList<TotalsPerBankTransactionCode5>();

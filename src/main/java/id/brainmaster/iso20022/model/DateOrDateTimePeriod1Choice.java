@@ -1,7 +1,6 @@
 
 package id.brainmaster.iso20022.model;
 
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -33,14 +32,11 @@ import javax.xml.bind.annotation.XmlType;
     "dt",
     "dtTm"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class DateOrDateTimePeriod1Choice {
 
     @XmlElement(name = "Dt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected DatePeriod2 dt;
     @XmlElement(name = "DtTm", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected DateTimePeriod1 dtTm;
 
     /**
@@ -51,7 +47,6 @@ public class DateOrDateTimePeriod1Choice {
      *     {@link DatePeriod2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public DatePeriod2 getDt() {
         return dt;
     }
@@ -64,7 +59,6 @@ public class DateOrDateTimePeriod1Choice {
      *     {@link DatePeriod2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setDt(DatePeriod2 value) {
         this.dt = value;
     }
@@ -77,7 +71,6 @@ public class DateOrDateTimePeriod1Choice {
      *     {@link DateTimePeriod1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public DateTimePeriod1 getDtTm() {
         return dtTm;
     }
@@ -90,7 +83,6 @@ public class DateOrDateTimePeriod1Choice {
      *     {@link DateTimePeriod1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setDtTm(DateTimePeriod1 value) {
         this.dtTm = value;
     }

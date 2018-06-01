@@ -3,7 +3,6 @@ package id.brainmaster.iso20022.model;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -35,14 +34,11 @@ import javax.xml.bind.annotation.XmlType;
     "dtAndPlcOfBirth",
     "othr"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class PersonIdentification13 {
 
     @XmlElement(name = "DtAndPlcOfBirth", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected DateAndPlaceOfBirth1 dtAndPlcOfBirth;
     @XmlElement(name = "Othr", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<GenericPersonIdentification1> othr;
 
     /**
@@ -53,7 +49,6 @@ public class PersonIdentification13 {
      *     {@link DateAndPlaceOfBirth1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public DateAndPlaceOfBirth1 getDtAndPlcOfBirth() {
         return dtAndPlcOfBirth;
     }
@@ -66,7 +61,6 @@ public class PersonIdentification13 {
      *     {@link DateAndPlaceOfBirth1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setDtAndPlcOfBirth(DateAndPlaceOfBirth1 value) {
         this.dtAndPlcOfBirth = value;
     }
@@ -93,7 +87,6 @@ public class PersonIdentification13 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<GenericPersonIdentification1> getOthr() {
         if (othr == null) {
             othr = new ArrayList<GenericPersonIdentification1>();

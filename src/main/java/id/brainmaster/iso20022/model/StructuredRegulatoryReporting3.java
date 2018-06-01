@@ -3,7 +3,6 @@ package id.brainmaster.iso20022.model;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -45,27 +44,20 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "amt",
     "inf"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class StructuredRegulatoryReporting3 {
 
     @XmlElement(name = "Tp", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String tp;
     @XmlElement(name = "Dt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
     @XmlSchemaType(name = "date")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected XMLGregorianCalendar dt;
     @XmlElement(name = "Ctry", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String ctry;
     @XmlElement(name = "Cd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String cd;
     @XmlElement(name = "Amt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected ActiveOrHistoricCurrencyAndAmount amt;
     @XmlElement(name = "Inf", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<String> inf;
 
     /**
@@ -76,7 +68,6 @@ public class StructuredRegulatoryReporting3 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getTp() {
         return tp;
     }
@@ -89,7 +80,6 @@ public class StructuredRegulatoryReporting3 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTp(String value) {
         this.tp = value;
     }
@@ -102,7 +92,6 @@ public class StructuredRegulatoryReporting3 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public XMLGregorianCalendar getDt() {
         return dt;
     }
@@ -115,7 +104,6 @@ public class StructuredRegulatoryReporting3 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setDt(XMLGregorianCalendar value) {
         this.dt = value;
     }
@@ -128,7 +116,6 @@ public class StructuredRegulatoryReporting3 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getCtry() {
         return ctry;
     }
@@ -141,7 +128,6 @@ public class StructuredRegulatoryReporting3 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCtry(String value) {
         this.ctry = value;
     }
@@ -154,7 +140,6 @@ public class StructuredRegulatoryReporting3 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getCd() {
         return cd;
     }
@@ -167,7 +152,6 @@ public class StructuredRegulatoryReporting3 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCd(String value) {
         this.cd = value;
     }
@@ -180,7 +164,6 @@ public class StructuredRegulatoryReporting3 {
      *     {@link ActiveOrHistoricCurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public ActiveOrHistoricCurrencyAndAmount getAmt() {
         return amt;
     }
@@ -193,7 +176,6 @@ public class StructuredRegulatoryReporting3 {
      *     {@link ActiveOrHistoricCurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAmt(ActiveOrHistoricCurrencyAndAmount value) {
         this.amt = value;
     }
@@ -220,7 +202,6 @@ public class StructuredRegulatoryReporting3 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<String> getInf() {
         if (inf == null) {
             inf = new ArrayList<String>();

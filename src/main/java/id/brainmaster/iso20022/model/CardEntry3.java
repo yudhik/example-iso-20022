@@ -1,7 +1,6 @@
 
 package id.brainmaster.iso20022.model;
 
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -37,20 +36,15 @@ import javax.xml.bind.annotation.XmlType;
     "aggtdNtry",
     "prePdAcct"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class CardEntry3 {
 
     @XmlElement(name = "Card", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected PaymentCard4 card;
     @XmlElement(name = "POI", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected PointOfInteraction1 poi;
     @XmlElement(name = "AggtdNtry", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CardAggregated2 aggtdNtry;
     @XmlElement(name = "PrePdAcct", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CashAccount24 prePdAcct;
 
     /**
@@ -61,7 +55,6 @@ public class CardEntry3 {
      *     {@link PaymentCard4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public PaymentCard4 getCard() {
         return card;
     }
@@ -74,7 +67,6 @@ public class CardEntry3 {
      *     {@link PaymentCard4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCard(PaymentCard4 value) {
         this.card = value;
     }
@@ -87,7 +79,6 @@ public class CardEntry3 {
      *     {@link PointOfInteraction1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public PointOfInteraction1 getPOI() {
         return poi;
     }
@@ -100,7 +91,6 @@ public class CardEntry3 {
      *     {@link PointOfInteraction1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setPOI(PointOfInteraction1 value) {
         this.poi = value;
     }
@@ -113,7 +103,6 @@ public class CardEntry3 {
      *     {@link CardAggregated2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CardAggregated2 getAggtdNtry() {
         return aggtdNtry;
     }
@@ -126,7 +115,6 @@ public class CardEntry3 {
      *     {@link CardAggregated2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAggtdNtry(CardAggregated2 value) {
         this.aggtdNtry = value;
     }
@@ -139,7 +127,6 @@ public class CardEntry3 {
      *     {@link CashAccount24 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CashAccount24 getPrePdAcct() {
         return prePdAcct;
     }
@@ -152,7 +139,6 @@ public class CardEntry3 {
      *     {@link CashAccount24 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setPrePdAcct(CashAccount24 value) {
         this.prePdAcct = value;
     }

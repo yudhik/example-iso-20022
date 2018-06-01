@@ -2,7 +2,6 @@
 package id.brainmaster.iso20022.model;
 
 import java.math.BigDecimal;
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -45,30 +44,22 @@ import javax.xml.bind.annotation.XmlType;
     "taxTp",
     "addtlPdctInf"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class Product2 {
 
     @XmlElement(name = "PdctCd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String pdctCd;
     @XmlElement(name = "UnitOfMeasr", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected UnitOfMeasure1Code unitOfMeasr;
     @XmlElement(name = "PdctQty", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BigDecimal pdctQty;
     @XmlElement(name = "UnitPric", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BigDecimal unitPric;
     @XmlElement(name = "PdctAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BigDecimal pdctAmt;
     @XmlElement(name = "TaxTp", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String taxTp;
     @XmlElement(name = "AddtlPdctInf", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String addtlPdctInf;
 
     /**
@@ -79,7 +70,6 @@ public class Product2 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getPdctCd() {
         return pdctCd;
     }
@@ -92,7 +82,6 @@ public class Product2 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setPdctCd(String value) {
         this.pdctCd = value;
     }
@@ -105,7 +94,6 @@ public class Product2 {
      *     {@link UnitOfMeasure1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public UnitOfMeasure1Code getUnitOfMeasr() {
         return unitOfMeasr;
     }
@@ -118,7 +106,6 @@ public class Product2 {
      *     {@link UnitOfMeasure1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setUnitOfMeasr(UnitOfMeasure1Code value) {
         this.unitOfMeasr = value;
     }
@@ -131,7 +118,6 @@ public class Product2 {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BigDecimal getPdctQty() {
         return pdctQty;
     }
@@ -144,7 +130,6 @@ public class Product2 {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setPdctQty(BigDecimal value) {
         this.pdctQty = value;
     }
@@ -157,7 +142,6 @@ public class Product2 {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BigDecimal getUnitPric() {
         return unitPric;
     }
@@ -170,7 +154,6 @@ public class Product2 {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setUnitPric(BigDecimal value) {
         this.unitPric = value;
     }
@@ -183,7 +166,6 @@ public class Product2 {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BigDecimal getPdctAmt() {
         return pdctAmt;
     }
@@ -196,7 +178,6 @@ public class Product2 {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setPdctAmt(BigDecimal value) {
         this.pdctAmt = value;
     }
@@ -209,7 +190,6 @@ public class Product2 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getTaxTp() {
         return taxTp;
     }
@@ -222,7 +202,6 @@ public class Product2 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTaxTp(String value) {
         this.taxTp = value;
     }
@@ -235,7 +214,6 @@ public class Product2 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getAddtlPdctInf() {
         return addtlPdctInf;
     }
@@ -248,7 +226,6 @@ public class Product2 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAddtlPdctInf(String value) {
         this.addtlPdctInf = value;
     }

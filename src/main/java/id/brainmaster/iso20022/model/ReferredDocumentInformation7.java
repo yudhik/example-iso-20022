@@ -3,7 +3,6 @@ package id.brainmaster.iso20022.model;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -41,21 +40,16 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "rltdDt",
     "lineDtls"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class ReferredDocumentInformation7 {
 
     @XmlElement(name = "Tp", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected ReferredDocumentType4 tp;
     @XmlElement(name = "Nb", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String nb;
     @XmlElement(name = "RltdDt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
     @XmlSchemaType(name = "date")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected XMLGregorianCalendar rltdDt;
     @XmlElement(name = "LineDtls", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<DocumentLineInformation1> lineDtls;
 
     /**
@@ -66,7 +60,6 @@ public class ReferredDocumentInformation7 {
      *     {@link ReferredDocumentType4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public ReferredDocumentType4 getTp() {
         return tp;
     }
@@ -79,7 +72,6 @@ public class ReferredDocumentInformation7 {
      *     {@link ReferredDocumentType4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTp(ReferredDocumentType4 value) {
         this.tp = value;
     }
@@ -92,7 +84,6 @@ public class ReferredDocumentInformation7 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getNb() {
         return nb;
     }
@@ -105,7 +96,6 @@ public class ReferredDocumentInformation7 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setNb(String value) {
         this.nb = value;
     }
@@ -118,7 +108,6 @@ public class ReferredDocumentInformation7 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public XMLGregorianCalendar getRltdDt() {
         return rltdDt;
     }
@@ -131,7 +120,6 @@ public class ReferredDocumentInformation7 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setRltdDt(XMLGregorianCalendar value) {
         this.rltdDt = value;
     }
@@ -158,7 +146,6 @@ public class ReferredDocumentInformation7 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<DocumentLineInformation1> getLineDtls() {
         if (lineDtls == null) {
             lineDtls = new ArrayList<DocumentLineInformation1>();

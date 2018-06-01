@@ -2,7 +2,6 @@
 package id.brainmaster.iso20022.model;
 
 import java.math.BigDecimal;
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -34,14 +33,11 @@ import javax.xml.bind.annotation.XmlType;
     "nbOfNtries",
     "sum"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class NumberAndSumOfTransactions1 {
 
     @XmlElement(name = "NbOfNtries", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String nbOfNtries;
     @XmlElement(name = "Sum", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BigDecimal sum;
 
     /**
@@ -52,7 +48,6 @@ public class NumberAndSumOfTransactions1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getNbOfNtries() {
         return nbOfNtries;
     }
@@ -65,7 +60,6 @@ public class NumberAndSumOfTransactions1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setNbOfNtries(String value) {
         this.nbOfNtries = value;
     }
@@ -78,7 +72,6 @@ public class NumberAndSumOfTransactions1 {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BigDecimal getSum() {
         return sum;
     }
@@ -91,7 +84,6 @@ public class NumberAndSumOfTransactions1 {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setSum(BigDecimal value) {
         this.sum = value;
     }

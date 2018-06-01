@@ -1,7 +1,6 @@
 
 package id.brainmaster.iso20022.model;
 
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -34,16 +33,13 @@ import javax.xml.bind.annotation.XmlType;
     "authntcnMtd",
     "authntcnNtty"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class CardholderAuthentication2 {
 
     @XmlElement(name = "AuthntcnMtd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected AuthenticationMethod1Code authntcnMtd;
     @XmlElement(name = "AuthntcnNtty", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected AuthenticationEntity1Code authntcnNtty;
 
     /**
@@ -54,7 +50,6 @@ public class CardholderAuthentication2 {
      *     {@link AuthenticationMethod1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public AuthenticationMethod1Code getAuthntcnMtd() {
         return authntcnMtd;
     }
@@ -67,7 +62,6 @@ public class CardholderAuthentication2 {
      *     {@link AuthenticationMethod1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAuthntcnMtd(AuthenticationMethod1Code value) {
         this.authntcnMtd = value;
     }
@@ -80,7 +74,6 @@ public class CardholderAuthentication2 {
      *     {@link AuthenticationEntity1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public AuthenticationEntity1Code getAuthntcnNtty() {
         return authntcnNtty;
     }
@@ -93,7 +86,6 @@ public class CardholderAuthentication2 {
      *     {@link AuthenticationEntity1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAuthntcnNtty(AuthenticationEntity1Code value) {
         this.authntcnNtty = value;
     }

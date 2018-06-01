@@ -3,7 +3,6 @@ package id.brainmaster.iso20022.model;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -41,23 +40,17 @@ import javax.xml.bind.annotation.XmlType;
     "anncdPstngAmt",
     "prtryAmt"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class AmountAndCurrencyExchange3 {
 
     @XmlElement(name = "InstdAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected AmountAndCurrencyExchangeDetails3 instdAmt;
     @XmlElement(name = "TxAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected AmountAndCurrencyExchangeDetails3 txAmt;
     @XmlElement(name = "CntrValAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected AmountAndCurrencyExchangeDetails3 cntrValAmt;
     @XmlElement(name = "AnncdPstngAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected AmountAndCurrencyExchangeDetails3 anncdPstngAmt;
     @XmlElement(name = "PrtryAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<AmountAndCurrencyExchangeDetails4> prtryAmt;
 
     /**
@@ -68,7 +61,6 @@ public class AmountAndCurrencyExchange3 {
      *     {@link AmountAndCurrencyExchangeDetails3 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public AmountAndCurrencyExchangeDetails3 getInstdAmt() {
         return instdAmt;
     }
@@ -81,7 +73,6 @@ public class AmountAndCurrencyExchange3 {
      *     {@link AmountAndCurrencyExchangeDetails3 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setInstdAmt(AmountAndCurrencyExchangeDetails3 value) {
         this.instdAmt = value;
     }
@@ -94,7 +85,6 @@ public class AmountAndCurrencyExchange3 {
      *     {@link AmountAndCurrencyExchangeDetails3 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public AmountAndCurrencyExchangeDetails3 getTxAmt() {
         return txAmt;
     }
@@ -107,7 +97,6 @@ public class AmountAndCurrencyExchange3 {
      *     {@link AmountAndCurrencyExchangeDetails3 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTxAmt(AmountAndCurrencyExchangeDetails3 value) {
         this.txAmt = value;
     }
@@ -120,7 +109,6 @@ public class AmountAndCurrencyExchange3 {
      *     {@link AmountAndCurrencyExchangeDetails3 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public AmountAndCurrencyExchangeDetails3 getCntrValAmt() {
         return cntrValAmt;
     }
@@ -133,7 +121,6 @@ public class AmountAndCurrencyExchange3 {
      *     {@link AmountAndCurrencyExchangeDetails3 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCntrValAmt(AmountAndCurrencyExchangeDetails3 value) {
         this.cntrValAmt = value;
     }
@@ -146,7 +133,6 @@ public class AmountAndCurrencyExchange3 {
      *     {@link AmountAndCurrencyExchangeDetails3 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public AmountAndCurrencyExchangeDetails3 getAnncdPstngAmt() {
         return anncdPstngAmt;
     }
@@ -159,7 +145,6 @@ public class AmountAndCurrencyExchange3 {
      *     {@link AmountAndCurrencyExchangeDetails3 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAnncdPstngAmt(AmountAndCurrencyExchangeDetails3 value) {
         this.anncdPstngAmt = value;
     }
@@ -186,7 +171,6 @@ public class AmountAndCurrencyExchange3 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<AmountAndCurrencyExchangeDetails4> getPrtryAmt() {
         if (prtryAmt == null) {
             prtryAmt = new ArrayList<AmountAndCurrencyExchangeDetails4>();

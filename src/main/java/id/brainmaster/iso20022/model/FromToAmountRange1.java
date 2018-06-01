@@ -1,7 +1,6 @@
 
 package id.brainmaster.iso20022.model;
 
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -33,14 +32,11 @@ import javax.xml.bind.annotation.XmlType;
     "frAmt",
     "toAmt"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class FromToAmountRange1 {
 
     @XmlElement(name = "FrAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected AmountRangeBoundary1 frAmt;
     @XmlElement(name = "ToAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected AmountRangeBoundary1 toAmt;
 
     /**
@@ -51,7 +47,6 @@ public class FromToAmountRange1 {
      *     {@link AmountRangeBoundary1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public AmountRangeBoundary1 getFrAmt() {
         return frAmt;
     }
@@ -64,7 +59,6 @@ public class FromToAmountRange1 {
      *     {@link AmountRangeBoundary1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setFrAmt(AmountRangeBoundary1 value) {
         this.frAmt = value;
     }
@@ -77,7 +71,6 @@ public class FromToAmountRange1 {
      *     {@link AmountRangeBoundary1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public AmountRangeBoundary1 getToAmt() {
         return toAmt;
     }
@@ -90,7 +83,6 @@ public class FromToAmountRange1 {
      *     {@link AmountRangeBoundary1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setToAmt(AmountRangeBoundary1 value) {
         this.toAmt = value;
     }

@@ -2,7 +2,6 @@
 package id.brainmaster.iso20022.model;
 
 import java.math.BigDecimal;
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -36,17 +35,13 @@ import javax.xml.bind.annotation.XmlType;
     "sum",
     "ttlNetNtry"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class NumberAndSumOfTransactions4 {
 
     @XmlElement(name = "NbOfNtries", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String nbOfNtries;
     @XmlElement(name = "Sum", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BigDecimal sum;
     @XmlElement(name = "TtlNetNtry", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected AmountAndDirection35 ttlNetNtry;
 
     /**
@@ -57,7 +52,6 @@ public class NumberAndSumOfTransactions4 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getNbOfNtries() {
         return nbOfNtries;
     }
@@ -70,7 +64,6 @@ public class NumberAndSumOfTransactions4 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setNbOfNtries(String value) {
         this.nbOfNtries = value;
     }
@@ -83,7 +76,6 @@ public class NumberAndSumOfTransactions4 {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BigDecimal getSum() {
         return sum;
     }
@@ -96,7 +88,6 @@ public class NumberAndSumOfTransactions4 {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setSum(BigDecimal value) {
         this.sum = value;
     }
@@ -109,7 +100,6 @@ public class NumberAndSumOfTransactions4 {
      *     {@link AmountAndDirection35 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public AmountAndDirection35 getTtlNetNtry() {
         return ttlNetNtry;
     }
@@ -122,7 +112,6 @@ public class NumberAndSumOfTransactions4 {
      *     {@link AmountAndDirection35 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTtlNetNtry(AmountAndDirection35 value) {
         this.ttlNetNtry = value;
     }

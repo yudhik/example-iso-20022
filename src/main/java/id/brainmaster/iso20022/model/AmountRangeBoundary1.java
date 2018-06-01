@@ -2,7 +2,6 @@
 package id.brainmaster.iso20022.model;
 
 import java.math.BigDecimal;
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -34,14 +33,11 @@ import javax.xml.bind.annotation.XmlType;
     "bdryAmt",
     "incl"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class AmountRangeBoundary1 {
 
     @XmlElement(name = "BdryAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BigDecimal bdryAmt;
     @XmlElement(name = "Incl", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected boolean incl;
 
     /**
@@ -52,7 +48,6 @@ public class AmountRangeBoundary1 {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BigDecimal getBdryAmt() {
         return bdryAmt;
     }
@@ -65,7 +60,6 @@ public class AmountRangeBoundary1 {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setBdryAmt(BigDecimal value) {
         this.bdryAmt = value;
     }
@@ -74,7 +68,6 @@ public class AmountRangeBoundary1 {
      * Gets the value of the incl property.
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public boolean isIncl() {
         return incl;
     }
@@ -83,7 +76,6 @@ public class AmountRangeBoundary1 {
      * Sets the value of the incl property.
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setIncl(boolean value) {
         this.incl = value;
     }

@@ -1,7 +1,6 @@
 
 package id.brainmaster.iso20022.model;
 
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -37,18 +36,14 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "msgNmId",
     "creDtTm"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class OriginalBusinessQuery1 {
 
     @XmlElement(name = "MsgId", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String msgId;
     @XmlElement(name = "MsgNmId", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String msgNmId;
     @XmlElement(name = "CreDtTm", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
     @XmlSchemaType(name = "dateTime")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected XMLGregorianCalendar creDtTm;
 
     /**
@@ -59,7 +54,6 @@ public class OriginalBusinessQuery1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getMsgId() {
         return msgId;
     }
@@ -72,7 +66,6 @@ public class OriginalBusinessQuery1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setMsgId(String value) {
         this.msgId = value;
     }
@@ -85,7 +78,6 @@ public class OriginalBusinessQuery1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getMsgNmId() {
         return msgNmId;
     }
@@ -98,7 +90,6 @@ public class OriginalBusinessQuery1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setMsgNmId(String value) {
         this.msgNmId = value;
     }
@@ -111,7 +102,6 @@ public class OriginalBusinessQuery1 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public XMLGregorianCalendar getCreDtTm() {
         return creDtTm;
     }
@@ -124,7 +114,6 @@ public class OriginalBusinessQuery1 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCreDtTm(XMLGregorianCalendar value) {
         this.creDtTm = value;
     }

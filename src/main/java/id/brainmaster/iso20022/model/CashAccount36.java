@@ -1,7 +1,6 @@
 
 package id.brainmaster.iso20022.model;
 
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -41,26 +40,19 @@ import javax.xml.bind.annotation.XmlType;
     "ownr",
     "svcr"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class CashAccount36 {
 
     @XmlElement(name = "Id", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected AccountIdentification4Choice id;
     @XmlElement(name = "Tp", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CashAccountType2Choice tp;
     @XmlElement(name = "Ccy", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String ccy;
     @XmlElement(name = "Nm", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String nm;
     @XmlElement(name = "Ownr", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected PartyIdentification125 ownr;
     @XmlElement(name = "Svcr", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BranchAndFinancialInstitutionIdentification5 svcr;
 
     /**
@@ -71,7 +63,6 @@ public class CashAccount36 {
      *     {@link AccountIdentification4Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public AccountIdentification4Choice getId() {
         return id;
     }
@@ -84,7 +75,6 @@ public class CashAccount36 {
      *     {@link AccountIdentification4Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setId(AccountIdentification4Choice value) {
         this.id = value;
     }
@@ -97,7 +87,6 @@ public class CashAccount36 {
      *     {@link CashAccountType2Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CashAccountType2Choice getTp() {
         return tp;
     }
@@ -110,7 +99,6 @@ public class CashAccount36 {
      *     {@link CashAccountType2Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTp(CashAccountType2Choice value) {
         this.tp = value;
     }
@@ -123,7 +111,6 @@ public class CashAccount36 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getCcy() {
         return ccy;
     }
@@ -136,7 +123,6 @@ public class CashAccount36 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCcy(String value) {
         this.ccy = value;
     }
@@ -149,7 +135,6 @@ public class CashAccount36 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getNm() {
         return nm;
     }
@@ -162,7 +147,6 @@ public class CashAccount36 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setNm(String value) {
         this.nm = value;
     }
@@ -175,7 +159,6 @@ public class CashAccount36 {
      *     {@link PartyIdentification125 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public PartyIdentification125 getOwnr() {
         return ownr;
     }
@@ -188,7 +171,6 @@ public class CashAccount36 {
      *     {@link PartyIdentification125 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setOwnr(PartyIdentification125 value) {
         this.ownr = value;
     }
@@ -201,7 +183,6 @@ public class CashAccount36 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BranchAndFinancialInstitutionIdentification5 getSvcr() {
         return svcr;
     }
@@ -214,7 +195,6 @@ public class CashAccount36 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setSvcr(BranchAndFinancialInstitutionIdentification5 value) {
         this.svcr = value;
     }

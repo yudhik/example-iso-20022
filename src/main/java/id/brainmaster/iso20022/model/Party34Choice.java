@@ -1,7 +1,6 @@
 
 package id.brainmaster.iso20022.model;
 
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -33,14 +32,11 @@ import javax.xml.bind.annotation.XmlType;
     "orgId",
     "prvtId"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class Party34Choice {
 
     @XmlElement(name = "OrgId", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected OrganisationIdentification8 orgId;
     @XmlElement(name = "PrvtId", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected PersonIdentification13 prvtId;
 
     /**
@@ -51,7 +47,6 @@ public class Party34Choice {
      *     {@link OrganisationIdentification8 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public OrganisationIdentification8 getOrgId() {
         return orgId;
     }
@@ -64,7 +59,6 @@ public class Party34Choice {
      *     {@link OrganisationIdentification8 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setOrgId(OrganisationIdentification8 value) {
         this.orgId = value;
     }
@@ -77,7 +71,6 @@ public class Party34Choice {
      *     {@link PersonIdentification13 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public PersonIdentification13 getPrvtId() {
         return prvtId;
     }
@@ -90,7 +83,6 @@ public class Party34Choice {
      *     {@link PersonIdentification13 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setPrvtId(PersonIdentification13 value) {
         this.prvtId = value;
     }

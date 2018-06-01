@@ -6,7 +6,16 @@
         <xs:choice>
             <xs:element name="BkToCstmrStmt" type="BankToCustomerStatementV07"/>
             <xs:element name="FIToFICstmrCdtTrf" type="FIToFICustomerCreditTransferV07"/>
+            <xs:element name="FIToFIPmtStsRpt" type="FIToFIPaymentStatusReportV09"/>
         </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="FIToFIPaymentStatusReportV09">
+        <xs:sequence>
+            <xs:element name="GrpHdr" type="GroupHeader53"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="OrgnlGrpInfAndSts" type="OriginalGroupHeader13"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="TxInfAndSts" type="PaymentTransaction91"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="SplmtryData" type="SupplementaryData1"/>
+        </xs:sequence>
     </xs:complexType>
     <xs:complexType name="BankToCustomerStatementV07">
         <xs:sequence>
@@ -20,6 +29,14 @@
             <xs:element name="GrpHdr" type="GroupHeader70"/>
             <xs:element maxOccurs="unbounded" minOccurs="1" name="CdtTrfTxInf" type="CreditTransferTransaction30"/>
             <xs:element maxOccurs="unbounded" minOccurs="0" name="SplmtryData" type="SupplementaryData1"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="GroupHeader53">
+        <xs:sequence>
+            <xs:element name="MsgId" type="Max35Text"/>
+            <xs:element name="CreDtTm" type="ISODateTime"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="InstgAgt" type="BranchAndFinancialInstitutionIdentification5"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="InstdAgt" type="BranchAndFinancialInstitutionIdentification5"/>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="GroupHeader70">
@@ -37,6 +54,50 @@
             <xs:element maxOccurs="1" minOccurs="0" name="InstdAgt" type="BranchAndFinancialInstitutionIdentification5"/>
         </xs:sequence>
     </xs:complexType>
+    <xs:simpleType name="ExternalPaymentTransactionStatus1Code">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ExternalStatusReason1Code">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="StatusReason6Choice">
+        <xs:choice>
+            <xs:element name="Cd" type="ExternalStatusReason1Code"/>
+            <xs:element name="Prtry" type="Max35Text"/>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="StatusReasonInformation11">
+        <xs:sequence>
+            <xs:element maxOccurs="1" minOccurs="0" name="Orgtr" type="PartyIdentification125"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="Rsn" type="StatusReason6Choice"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="AddtlInf" type="Max105Text"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="OriginalGroupHeader13">
+        <xs:sequence>
+            <xs:element name="OrgnlMsgId" type="Max35Text"/>
+            <xs:element name="OrgnlMsgNmId" type="Max35Text"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="OrgnlCreDtTm" type="ISODateTime"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="OrgnlNbOfTxs" type="Max15NumericText"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="OrgnlCtrlSum" type="DecimalNumber"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="GrpSts" type="ExternalPaymentGroupStatus1Code"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="StsRsnInf" type="StatusReasonInformation11"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="NbOfTxsPerSts" type="NumberOfTransactionsPerStatus5"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="NumberOfTransactionsPerStatus5">
+        <xs:sequence>
+            <xs:element name="DtldNbOfTxs" type="Max15NumericText"/>
+            <xs:element name="DtldSts" type="ExternalPaymentTransactionStatus1Code"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="DtldCtrlSum" type="DecimalNumber"/>
+        </xs:sequence>
+    </xs:complexType>
     <xs:complexType name="SettlementInstruction4">
         <xs:sequence>
             <xs:element name="SttlmMtd" type="SettlementMethod1Code"/>
@@ -50,6 +111,182 @@
             <xs:element maxOccurs="1" minOccurs="0" name="ThrdRmbrsmntAgtAcct" type="CashAccount24"/>
         </xs:sequence>
     </xs:complexType>
+    <xs:complexType name="AmountType4Choice">
+        <xs:choice>
+            <xs:element name="InstdAmt" type="ActiveOrHistoricCurrencyAndAmount"/>
+            <xs:element name="EqvtAmt" type="EquivalentAmount2"/>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="EquivalentAmount2">
+        <xs:sequence>
+            <xs:element name="Amt" type="ActiveOrHistoricCurrencyAndAmount"/>
+            <xs:element name="CcyOfTrf" type="ActiveOrHistoricCurrencyCode"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="OriginalTransactionReference27">
+        <xs:sequence>
+            <xs:element maxOccurs="1" minOccurs="0" name="IntrBkSttlmAmt" type="ActiveOrHistoricCurrencyAndAmount"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="Amt" type="AmountType4Choice"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="IntrBkSttlmDt" type="ISODate"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="ReqdColltnDt" type="ISODate"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="ReqdExctnDt" type="DateAndDateTime2Choice"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="CdtrSchmeId" type="PartyIdentification125"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="SttlmInf" type="SettlementInstruction4"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="PmtTpInf" type="PaymentTypeInformation25"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="PmtMtd" type="PaymentMethod4Code"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="MndtRltdInf" type="MandateRelatedInformation12"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="RmtInf" type="RemittanceInformation15"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="UltmtDbtr" type="Party35Choice"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="Dbtr" type="Party35Choice"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="DbtrAcct" type="CashAccount24"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="DbtrAgt" type="BranchAndFinancialInstitutionIdentification5"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="DbtrAgtAcct" type="CashAccount24"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="CdtrAgt" type="BranchAndFinancialInstitutionIdentification5"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="CdtrAgtAcct" type="CashAccount24"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="Cdtr" type="Party35Choice"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="CdtrAcct" type="CashAccount24"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="UltmtCdtr" type="Party35Choice"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="Purp" type="Purpose2Choice"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="AmendmentInformationDetails12">
+        <xs:sequence>
+            <xs:element maxOccurs="1" minOccurs="0" name="OrgnlMndtId" type="Max35Text"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="OrgnlCdtrSchmeId" type="PartyIdentification125"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="OrgnlCdtrAgt" type="BranchAndFinancialInstitutionIdentification5"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="OrgnlCdtrAgtAcct" type="CashAccount24"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="OrgnlDbtr" type="PartyIdentification125"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="OrgnlDbtrAcct" type="CashAccount24"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="OrgnlDbtrAgt" type="BranchAndFinancialInstitutionIdentification5"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="OrgnlDbtrAgtAcct" type="CashAccount24"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="OrgnlFnlColltnDt" type="ISODate"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="OrgnlFrqcy" type="Frequency36Choice"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="OrgnlRsn" type="MandateSetupReason1Choice"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="OrgnlTrckgDays" type="Exact2NumericText"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="Exact2NumericText">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ExternalMandateSetupReason1Code">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="MandateSetupReason1Choice">
+        <xs:choice>
+            <xs:element name="Cd" type="ExternalMandateSetupReason1Code"/>
+            <xs:element name="Prtry" type="Max70Text"/>
+        </xs:choice>
+    </xs:complexType>
+    <xs:simpleType name="Frequency6Code">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="YEAR"/>
+            <xs:enumeration value="MNTH"/>
+            <xs:enumeration value="QURT"/>
+            <xs:enumeration value="MIAN"/>
+            <xs:enumeration value="WEEK"/>
+            <xs:enumeration value="DAIL"/>
+            <xs:enumeration value="ADHO"/>
+            <xs:enumeration value="INDA"/>
+            <xs:enumeration value="FRTN"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="FrequencyPeriod1">
+        <xs:sequence>
+            <xs:element name="Tp" type="Frequency6Code"/>
+            <xs:element name="CntPerPrd" type="DecimalNumber"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Frequency36Choice">
+        <xs:choice>
+            <xs:element name="Tp" type="Frequency6Code"/>
+            <xs:element name="Prd" type="FrequencyPeriod1"/>
+            <xs:element name="PtInTm" type="FrequencyAndMoment1"/>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="FrequencyAndMoment1">
+        <xs:sequence>
+            <xs:element name="Tp" type="Frequency6Code"/>
+            <xs:element name="PtInTm" type="Exact2NumericText"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="MandateRelatedInformation12">
+        <xs:sequence>
+            <xs:element maxOccurs="1" minOccurs="0" name="MndtId" type="Max35Text"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="DtOfSgntr" type="ISODate"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="AmdmntInd" type="TrueFalseIndicator"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="AmdmntInfDtls" type="AmendmentInformationDetails12"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="ElctrncSgntr" type="Max1025Text"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="FrstColltnDt" type="ISODate"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="FnlColltnDt" type="ISODate"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="Frqcy" type="Frequency36Choice"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="Rsn" type="MandateSetupReason1Choice"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="TrckgDays" type="Exact2NumericText"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="PaymentMethod4Code">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="CHK"/>
+            <xs:enumeration value="TRF"/>
+            <xs:enumeration value="DD"/>
+            <xs:enumeration value="TRA"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="PaymentTypeInformation25">
+        <xs:sequence>
+            <xs:element maxOccurs="1" minOccurs="0" name="InstrPrty" type="Priority2Code"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="ClrChanl" type="ClearingChannel2Code"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="SvcLvl" type="ServiceLevel8Choice"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="LclInstrm" type="LocalInstrument2Choice"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="SeqTp" type="SequenceType3Code"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="CtgyPurp" type="CategoryPurpose1Choice"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="SequenceType3Code">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="FRST"/>
+            <xs:enumeration value="RCUR"/>
+            <xs:enumeration value="FNAL"/>
+            <xs:enumeration value="OOFF"/>
+            <xs:enumeration value="RPRE"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="PaymentTransaction91">
+        <xs:sequence>
+            <xs:element maxOccurs="1" minOccurs="0" name="StsId" type="Max35Text"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="OrgnlGrpInf" type="OriginalGroupInformation29"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="OrgnlInstrId" type="Max35Text"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="OrgnlEndToEndId" type="Max35Text"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="OrgnlTxId" type="Max35Text"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="TxSts" type="ExternalPaymentTransactionStatus1Code"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="StsRsnInf" type="StatusReasonInformation11"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="ChrgsInf" type="Charges2"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="AccptncDtTm" type="ISODateTime"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="AcctSvcrRef" type="Max35Text"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="ClrSysRef" type="Max35Text"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="InstgAgt" type="BranchAndFinancialInstitutionIdentification5"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="InstdAgt" type="BranchAndFinancialInstitutionIdentification5"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="OrgnlTxRef" type="OriginalTransactionReference27"/>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="SplmtryData" type="SupplementaryData1"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="OriginalGroupInformation29">
+        <xs:sequence>
+            <xs:element name="OrgnlMsgId" type="Max35Text"/>
+            <xs:element name="OrgnlMsgNmId" type="Max35Text"/>
+            <xs:element maxOccurs="1" minOccurs="0" name="OrgnlCreDtTm" type="ISODateTime"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="ExternalPaymentGroupStatus1Code">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="4"/>
+        </xs:restriction>
+    </xs:simpleType>
     <xs:complexType name="PaymentTypeInformation21">
         <xs:sequence>
             <xs:element maxOccurs="1" minOccurs="0" name="InstrPrty" type="Priority2Code"/>

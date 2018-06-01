@@ -1,7 +1,6 @@
 
 package id.brainmaster.iso20022.model;
 
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -33,14 +32,11 @@ import javax.xml.bind.annotation.XmlType;
     "pty",
     "agt"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class Party35Choice {
 
     @XmlElement(name = "Pty", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected PartyIdentification125 pty;
     @XmlElement(name = "Agt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BranchAndFinancialInstitutionIdentification5 agt;
 
     /**
@@ -51,7 +47,6 @@ public class Party35Choice {
      *     {@link PartyIdentification125 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public PartyIdentification125 getPty() {
         return pty;
     }
@@ -64,7 +59,6 @@ public class Party35Choice {
      *     {@link PartyIdentification125 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setPty(PartyIdentification125 value) {
         this.pty = value;
     }
@@ -77,7 +71,6 @@ public class Party35Choice {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BranchAndFinancialInstitutionIdentification5 getAgt() {
         return agt;
     }
@@ -90,7 +83,6 @@ public class Party35Choice {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAgt(BranchAndFinancialInstitutionIdentification5 value) {
         this.agt = value;
     }

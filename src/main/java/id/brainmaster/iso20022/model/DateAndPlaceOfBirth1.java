@@ -1,7 +1,6 @@
 
 package id.brainmaster.iso20022.model;
 
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -39,21 +38,16 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "cityOfBirth",
     "ctryOfBirth"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class DateAndPlaceOfBirth1 {
 
     @XmlElement(name = "BirthDt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
     @XmlSchemaType(name = "date")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected XMLGregorianCalendar birthDt;
     @XmlElement(name = "PrvcOfBirth", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String prvcOfBirth;
     @XmlElement(name = "CityOfBirth", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String cityOfBirth;
     @XmlElement(name = "CtryOfBirth", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String ctryOfBirth;
 
     /**
@@ -64,7 +58,6 @@ public class DateAndPlaceOfBirth1 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public XMLGregorianCalendar getBirthDt() {
         return birthDt;
     }
@@ -77,7 +70,6 @@ public class DateAndPlaceOfBirth1 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setBirthDt(XMLGregorianCalendar value) {
         this.birthDt = value;
     }
@@ -90,7 +82,6 @@ public class DateAndPlaceOfBirth1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getPrvcOfBirth() {
         return prvcOfBirth;
     }
@@ -103,7 +94,6 @@ public class DateAndPlaceOfBirth1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setPrvcOfBirth(String value) {
         this.prvcOfBirth = value;
     }
@@ -116,7 +106,6 @@ public class DateAndPlaceOfBirth1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getCityOfBirth() {
         return cityOfBirth;
     }
@@ -129,7 +118,6 @@ public class DateAndPlaceOfBirth1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCityOfBirth(String value) {
         this.cityOfBirth = value;
     }
@@ -142,7 +130,6 @@ public class DateAndPlaceOfBirth1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getCtryOfBirth() {
         return ctryOfBirth;
     }
@@ -155,7 +142,6 @@ public class DateAndPlaceOfBirth1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCtryOfBirth(String value) {
         this.ctryOfBirth = value;
     }

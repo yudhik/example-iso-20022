@@ -1,7 +1,6 @@
 
 package id.brainmaster.iso20022.model;
 
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -36,18 +35,14 @@ import javax.xml.bind.annotation.XmlType;
     "cdtDbtInd",
     "ccy"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class ActiveOrHistoricCurrencyAndAmountRange2 {
 
     @XmlElement(name = "Amt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected ImpliedCurrencyAmountRange1Choice amt;
     @XmlElement(name = "CdtDbtInd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CreditDebitCode cdtDbtInd;
     @XmlElement(name = "Ccy", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String ccy;
 
     /**
@@ -58,7 +53,6 @@ public class ActiveOrHistoricCurrencyAndAmountRange2 {
      *     {@link ImpliedCurrencyAmountRange1Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public ImpliedCurrencyAmountRange1Choice getAmt() {
         return amt;
     }
@@ -71,7 +65,6 @@ public class ActiveOrHistoricCurrencyAndAmountRange2 {
      *     {@link ImpliedCurrencyAmountRange1Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAmt(ImpliedCurrencyAmountRange1Choice value) {
         this.amt = value;
     }
@@ -84,7 +77,6 @@ public class ActiveOrHistoricCurrencyAndAmountRange2 {
      *     {@link CreditDebitCode }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CreditDebitCode getCdtDbtInd() {
         return cdtDbtInd;
     }
@@ -97,7 +89,6 @@ public class ActiveOrHistoricCurrencyAndAmountRange2 {
      *     {@link CreditDebitCode }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCdtDbtInd(CreditDebitCode value) {
         this.cdtDbtInd = value;
     }
@@ -110,7 +101,6 @@ public class ActiveOrHistoricCurrencyAndAmountRange2 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getCcy() {
         return ccy;
     }
@@ -123,7 +113,6 @@ public class ActiveOrHistoricCurrencyAndAmountRange2 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCcy(String value) {
         this.ccy = value;
     }

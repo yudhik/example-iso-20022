@@ -74,11 +74,43 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link NumberOfTransactionsPerStatus5 }
+     * 
+     */
+    public NumberOfTransactionsPerStatus5 createNumberOfTransactionsPerStatus5() {
+        return new NumberOfTransactionsPerStatus5();
+    }
+
+    /**
      * Create an instance of {@link SequenceRange1Choice }
      * 
      */
     public SequenceRange1Choice createSequenceRange1Choice() {
         return new SequenceRange1Choice();
+    }
+
+    /**
+     * Create an instance of {@link FrequencyAndMoment1 }
+     * 
+     */
+    public FrequencyAndMoment1 createFrequencyAndMoment1() {
+        return new FrequencyAndMoment1();
+    }
+
+    /**
+     * Create an instance of {@link StatusReasonInformation11 }
+     * 
+     */
+    public StatusReasonInformation11 createStatusReasonInformation11() {
+        return new StatusReasonInformation11();
+    }
+
+    /**
+     * Create an instance of {@link OriginalTransactionReference27 }
+     * 
+     */
+    public OriginalTransactionReference27 createOriginalTransactionReference27() {
+        return new OriginalTransactionReference27();
     }
 
     /**
@@ -127,6 +159,14 @@ public class ObjectFactory {
      */
     public TotalsPerBankTransactionCode5 createTotalsPerBankTransactionCode5() {
         return new TotalsPerBankTransactionCode5();
+    }
+
+    /**
+     * Create an instance of {@link GroupHeader53 }
+     * 
+     */
+    public GroupHeader53 createGroupHeader53() {
+        return new GroupHeader53();
     }
 
     /**
@@ -258,6 +298,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link EquivalentAmount2 }
+     * 
+     */
+    public EquivalentAmount2 createEquivalentAmount2() {
+        return new EquivalentAmount2();
+    }
+
+    /**
      * Create an instance of {@link ActiveOrHistoricCurrencyAnd13DecimalAmount }
      * 
      */
@@ -378,6 +426,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link AmendmentInformationDetails12 }
+     * 
+     */
+    public AmendmentInformationDetails12 createAmendmentInformationDetails12() {
+        return new AmendmentInformationDetails12();
+    }
+
+    /**
      * Create an instance of {@link DiscountAmountAndType1 }
      * 
      */
@@ -482,6 +538,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link MandateSetupReason1Choice }
+     * 
+     */
+    public MandateSetupReason1Choice createMandateSetupReason1Choice() {
+        return new MandateSetupReason1Choice();
+    }
+
+    /**
      * Create an instance of {@link BankTransactionCodeStructure4 }
      * 
      */
@@ -535,6 +599,14 @@ public class ObjectFactory {
      */
     public DiscountAmountType1Choice createDiscountAmountType1Choice() {
         return new DiscountAmountType1Choice();
+    }
+
+    /**
+     * Create an instance of {@link MandateRelatedInformation12 }
+     * 
+     */
+    public MandateRelatedInformation12 createMandateRelatedInformation12() {
+        return new MandateRelatedInformation12();
     }
 
     /**
@@ -631,6 +703,14 @@ public class ObjectFactory {
      */
     public CreditTransferTransaction30 createCreditTransferTransaction30() {
         return new CreditTransferTransaction30();
+    }
+
+    /**
+     * Create an instance of {@link OriginalGroupInformation29 }
+     * 
+     */
+    public OriginalGroupInformation29 createOriginalGroupInformation29() {
+        return new OriginalGroupInformation29();
     }
 
     /**
@@ -778,6 +858,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link AmountType4Choice }
+     * 
+     */
+    public AmountType4Choice createAmountType4Choice() {
+        return new AmountType4Choice();
+    }
+
+    /**
      * Create an instance of {@link Garnishment2 }
      * 
      */
@@ -799,6 +887,14 @@ public class ObjectFactory {
      */
     public OriginalAndCurrentQuantities1 createOriginalAndCurrentQuantities1() {
         return new OriginalAndCurrentQuantities1();
+    }
+
+    /**
+     * Create an instance of {@link OriginalGroupHeader13 }
+     * 
+     */
+    public OriginalGroupHeader13 createOriginalGroupHeader13() {
+        return new OriginalGroupHeader13();
     }
 
     /**
@@ -914,6 +1010,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link PaymentTransaction91 }
+     * 
+     */
+    public PaymentTransaction91 createPaymentTransaction91() {
+        return new PaymentTransaction91();
+    }
+
+    /**
      * Create an instance of {@link StructuredRemittanceInformation15 }
      * 
      */
@@ -927,6 +1031,14 @@ public class ObjectFactory {
      */
     public TransactionInterest4 createTransactionInterest4() {
         return new TransactionInterest4();
+    }
+
+    /**
+     * Create an instance of {@link FrequencyPeriod1 }
+     * 
+     */
+    public FrequencyPeriod1 createFrequencyPeriod1() {
+        return new FrequencyPeriod1();
     }
 
     /**
@@ -975,6 +1087,14 @@ public class ObjectFactory {
      */
     public TrackData1 createTrackData1() {
         return new TrackData1();
+    }
+
+    /**
+     * Create an instance of {@link PaymentTypeInformation25 }
+     * 
+     */
+    public PaymentTypeInformation25 createPaymentTypeInformation25() {
+        return new PaymentTypeInformation25();
     }
 
     /**
@@ -1130,6 +1250,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link StatusReason6Choice }
+     * 
+     */
+    public StatusReason6Choice createStatusReason6Choice() {
+        return new StatusReason6Choice();
+    }
+
+    /**
      * Create an instance of {@link PaymentContext3 }
      * 
      */
@@ -1191,6 +1319,14 @@ public class ObjectFactory {
      */
     public Rate4 createRate4() {
         return new Rate4();
+    }
+
+    /**
+     * Create an instance of {@link FIToFIPaymentStatusReportV09 }
+     * 
+     */
+    public FIToFIPaymentStatusReportV09 createFIToFIPaymentStatusReportV09() {
+        return new FIToFIPaymentStatusReportV09();
     }
 
     /**
@@ -1295,6 +1431,14 @@ public class ObjectFactory {
      */
     public AmountAndDirection35 createAmountAndDirection35() {
         return new AmountAndDirection35();
+    }
+
+    /**
+     * Create an instance of {@link Frequency36Choice }
+     * 
+     */
+    public Frequency36Choice createFrequency36Choice() {
+        return new Frequency36Choice();
     }
 
     /**

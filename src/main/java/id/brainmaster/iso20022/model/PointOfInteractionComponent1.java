@@ -3,7 +3,6 @@ package id.brainmaster.iso20022.model;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -44,27 +43,20 @@ import javax.xml.bind.annotation.XmlType;
     "srlNb",
     "apprvlNb"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class PointOfInteractionComponent1 {
 
     @XmlElement(name = "POICmpntTp", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected POIComponentType1Code poiCmpntTp;
     @XmlElement(name = "ManfctrId", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String manfctrId;
     @XmlElement(name = "Mdl", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String mdl;
     @XmlElement(name = "VrsnNb", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String vrsnNb;
     @XmlElement(name = "SrlNb", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String srlNb;
     @XmlElement(name = "ApprvlNb", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<String> apprvlNb;
 
     /**
@@ -75,7 +67,6 @@ public class PointOfInteractionComponent1 {
      *     {@link POIComponentType1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public POIComponentType1Code getPOICmpntTp() {
         return poiCmpntTp;
     }
@@ -88,7 +79,6 @@ public class PointOfInteractionComponent1 {
      *     {@link POIComponentType1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setPOICmpntTp(POIComponentType1Code value) {
         this.poiCmpntTp = value;
     }
@@ -101,7 +91,6 @@ public class PointOfInteractionComponent1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getManfctrId() {
         return manfctrId;
     }
@@ -114,7 +103,6 @@ public class PointOfInteractionComponent1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setManfctrId(String value) {
         this.manfctrId = value;
     }
@@ -127,7 +115,6 @@ public class PointOfInteractionComponent1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getMdl() {
         return mdl;
     }
@@ -140,7 +127,6 @@ public class PointOfInteractionComponent1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setMdl(String value) {
         this.mdl = value;
     }
@@ -153,7 +139,6 @@ public class PointOfInteractionComponent1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getVrsnNb() {
         return vrsnNb;
     }
@@ -166,7 +151,6 @@ public class PointOfInteractionComponent1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setVrsnNb(String value) {
         this.vrsnNb = value;
     }
@@ -179,7 +163,6 @@ public class PointOfInteractionComponent1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getSrlNb() {
         return srlNb;
     }
@@ -192,7 +175,6 @@ public class PointOfInteractionComponent1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setSrlNb(String value) {
         this.srlNb = value;
     }
@@ -219,7 +201,6 @@ public class PointOfInteractionComponent1 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<String> getApprvlNb() {
         if (apprvlNb == null) {
             apprvlNb = new ArrayList<String>();

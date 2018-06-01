@@ -1,7 +1,6 @@
 
 package id.brainmaster.iso20022.model;
 
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -37,20 +36,15 @@ import javax.xml.bind.annotation.XmlType;
     "cardBrnd",
     "addtlCardData"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class PaymentCard4 {
 
     @XmlElement(name = "PlainCardData", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected PlainCardData1 plainCardData;
     @XmlElement(name = "CardCtryCd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String cardCtryCd;
     @XmlElement(name = "CardBrnd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected GenericIdentification1 cardBrnd;
     @XmlElement(name = "AddtlCardData", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String addtlCardData;
 
     /**
@@ -61,7 +55,6 @@ public class PaymentCard4 {
      *     {@link PlainCardData1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public PlainCardData1 getPlainCardData() {
         return plainCardData;
     }
@@ -74,7 +67,6 @@ public class PaymentCard4 {
      *     {@link PlainCardData1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setPlainCardData(PlainCardData1 value) {
         this.plainCardData = value;
     }
@@ -87,7 +79,6 @@ public class PaymentCard4 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getCardCtryCd() {
         return cardCtryCd;
     }
@@ -100,7 +91,6 @@ public class PaymentCard4 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCardCtryCd(String value) {
         this.cardCtryCd = value;
     }
@@ -113,7 +103,6 @@ public class PaymentCard4 {
      *     {@link GenericIdentification1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public GenericIdentification1 getCardBrnd() {
         return cardBrnd;
     }
@@ -126,7 +115,6 @@ public class PaymentCard4 {
      *     {@link GenericIdentification1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCardBrnd(GenericIdentification1 value) {
         this.cardBrnd = value;
     }
@@ -139,7 +127,6 @@ public class PaymentCard4 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getAddtlCardData() {
         return addtlCardData;
     }
@@ -152,7 +139,6 @@ public class PaymentCard4 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAddtlCardData(String value) {
         this.addtlCardData = value;
     }

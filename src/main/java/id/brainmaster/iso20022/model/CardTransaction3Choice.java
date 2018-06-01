@@ -1,7 +1,6 @@
 
 package id.brainmaster.iso20022.model;
 
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -33,14 +32,11 @@ import javax.xml.bind.annotation.XmlType;
     "aggtd",
     "indv"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class CardTransaction3Choice {
 
     @XmlElement(name = "Aggtd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CardAggregated2 aggtd;
     @XmlElement(name = "Indv", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CardIndividualTransaction2 indv;
 
     /**
@@ -51,7 +47,6 @@ public class CardTransaction3Choice {
      *     {@link CardAggregated2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CardAggregated2 getAggtd() {
         return aggtd;
     }
@@ -64,7 +59,6 @@ public class CardTransaction3Choice {
      *     {@link CardAggregated2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAggtd(CardAggregated2 value) {
         this.aggtd = value;
     }
@@ -77,7 +71,6 @@ public class CardTransaction3Choice {
      *     {@link CardIndividualTransaction2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CardIndividualTransaction2 getIndv() {
         return indv;
     }
@@ -90,7 +83,6 @@ public class CardTransaction3Choice {
      *     {@link CardIndividualTransaction2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setIndv(CardIndividualTransaction2 value) {
         this.indv = value;
     }

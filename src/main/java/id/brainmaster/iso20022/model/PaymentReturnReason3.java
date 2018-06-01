@@ -3,7 +3,6 @@ package id.brainmaster.iso20022.model;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -39,20 +38,15 @@ import javax.xml.bind.annotation.XmlType;
     "rsn",
     "addtlInf"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class PaymentReturnReason3 {
 
     @XmlElement(name = "OrgnlBkTxCd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BankTransactionCodeStructure4 orgnlBkTxCd;
     @XmlElement(name = "Orgtr", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected PartyIdentification125 orgtr;
     @XmlElement(name = "Rsn", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected ReturnReason5Choice rsn;
     @XmlElement(name = "AddtlInf", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<String> addtlInf;
 
     /**
@@ -63,7 +57,6 @@ public class PaymentReturnReason3 {
      *     {@link BankTransactionCodeStructure4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BankTransactionCodeStructure4 getOrgnlBkTxCd() {
         return orgnlBkTxCd;
     }
@@ -76,7 +69,6 @@ public class PaymentReturnReason3 {
      *     {@link BankTransactionCodeStructure4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setOrgnlBkTxCd(BankTransactionCodeStructure4 value) {
         this.orgnlBkTxCd = value;
     }
@@ -89,7 +81,6 @@ public class PaymentReturnReason3 {
      *     {@link PartyIdentification125 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public PartyIdentification125 getOrgtr() {
         return orgtr;
     }
@@ -102,7 +93,6 @@ public class PaymentReturnReason3 {
      *     {@link PartyIdentification125 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setOrgtr(PartyIdentification125 value) {
         this.orgtr = value;
     }
@@ -115,7 +105,6 @@ public class PaymentReturnReason3 {
      *     {@link ReturnReason5Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public ReturnReason5Choice getRsn() {
         return rsn;
     }
@@ -128,7 +117,6 @@ public class PaymentReturnReason3 {
      *     {@link ReturnReason5Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setRsn(ReturnReason5Choice value) {
         this.rsn = value;
     }
@@ -155,7 +143,6 @@ public class PaymentReturnReason3 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<String> getAddtlInf() {
         if (addtlInf == null) {
             addtlInf = new ArrayList<String>();

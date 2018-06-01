@@ -3,7 +3,6 @@ package id.brainmaster.iso20022.model;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -55,44 +54,31 @@ import javax.xml.bind.annotation.XmlType;
     "sttlmPlc",
     "prtry"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class TransactionAgents4 {
 
     @XmlElement(name = "InstgAgt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BranchAndFinancialInstitutionIdentification5 instgAgt;
     @XmlElement(name = "InstdAgt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BranchAndFinancialInstitutionIdentification5 instdAgt;
     @XmlElement(name = "DbtrAgt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BranchAndFinancialInstitutionIdentification5 dbtrAgt;
     @XmlElement(name = "CdtrAgt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BranchAndFinancialInstitutionIdentification5 cdtrAgt;
     @XmlElement(name = "IntrmyAgt1", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BranchAndFinancialInstitutionIdentification5 intrmyAgt1;
     @XmlElement(name = "IntrmyAgt2", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BranchAndFinancialInstitutionIdentification5 intrmyAgt2;
     @XmlElement(name = "IntrmyAgt3", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BranchAndFinancialInstitutionIdentification5 intrmyAgt3;
     @XmlElement(name = "RcvgAgt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BranchAndFinancialInstitutionIdentification5 rcvgAgt;
     @XmlElement(name = "DlvrgAgt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BranchAndFinancialInstitutionIdentification5 dlvrgAgt;
     @XmlElement(name = "IssgAgt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BranchAndFinancialInstitutionIdentification5 issgAgt;
     @XmlElement(name = "SttlmPlc", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BranchAndFinancialInstitutionIdentification5 sttlmPlc;
     @XmlElement(name = "Prtry", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<ProprietaryAgent3> prtry;
 
     /**
@@ -103,7 +89,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BranchAndFinancialInstitutionIdentification5 getInstgAgt() {
         return instgAgt;
     }
@@ -116,7 +101,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setInstgAgt(BranchAndFinancialInstitutionIdentification5 value) {
         this.instgAgt = value;
     }
@@ -129,7 +113,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BranchAndFinancialInstitutionIdentification5 getInstdAgt() {
         return instdAgt;
     }
@@ -142,7 +125,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setInstdAgt(BranchAndFinancialInstitutionIdentification5 value) {
         this.instdAgt = value;
     }
@@ -155,7 +137,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BranchAndFinancialInstitutionIdentification5 getDbtrAgt() {
         return dbtrAgt;
     }
@@ -168,7 +149,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setDbtrAgt(BranchAndFinancialInstitutionIdentification5 value) {
         this.dbtrAgt = value;
     }
@@ -181,7 +161,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BranchAndFinancialInstitutionIdentification5 getCdtrAgt() {
         return cdtrAgt;
     }
@@ -194,7 +173,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCdtrAgt(BranchAndFinancialInstitutionIdentification5 value) {
         this.cdtrAgt = value;
     }
@@ -207,7 +185,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BranchAndFinancialInstitutionIdentification5 getIntrmyAgt1() {
         return intrmyAgt1;
     }
@@ -220,7 +197,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setIntrmyAgt1(BranchAndFinancialInstitutionIdentification5 value) {
         this.intrmyAgt1 = value;
     }
@@ -233,7 +209,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BranchAndFinancialInstitutionIdentification5 getIntrmyAgt2() {
         return intrmyAgt2;
     }
@@ -246,7 +221,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setIntrmyAgt2(BranchAndFinancialInstitutionIdentification5 value) {
         this.intrmyAgt2 = value;
     }
@@ -259,7 +233,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BranchAndFinancialInstitutionIdentification5 getIntrmyAgt3() {
         return intrmyAgt3;
     }
@@ -272,7 +245,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setIntrmyAgt3(BranchAndFinancialInstitutionIdentification5 value) {
         this.intrmyAgt3 = value;
     }
@@ -285,7 +257,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BranchAndFinancialInstitutionIdentification5 getRcvgAgt() {
         return rcvgAgt;
     }
@@ -298,7 +269,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setRcvgAgt(BranchAndFinancialInstitutionIdentification5 value) {
         this.rcvgAgt = value;
     }
@@ -311,7 +281,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BranchAndFinancialInstitutionIdentification5 getDlvrgAgt() {
         return dlvrgAgt;
     }
@@ -324,7 +293,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setDlvrgAgt(BranchAndFinancialInstitutionIdentification5 value) {
         this.dlvrgAgt = value;
     }
@@ -337,7 +305,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BranchAndFinancialInstitutionIdentification5 getIssgAgt() {
         return issgAgt;
     }
@@ -350,7 +317,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setIssgAgt(BranchAndFinancialInstitutionIdentification5 value) {
         this.issgAgt = value;
     }
@@ -363,7 +329,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BranchAndFinancialInstitutionIdentification5 getSttlmPlc() {
         return sttlmPlc;
     }
@@ -376,7 +341,6 @@ public class TransactionAgents4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setSttlmPlc(BranchAndFinancialInstitutionIdentification5 value) {
         this.sttlmPlc = value;
     }
@@ -403,7 +367,6 @@ public class TransactionAgents4 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<ProprietaryAgent3> getPrtry() {
         if (prtry == null) {
             prtry = new ArrayList<ProprietaryAgent3>();

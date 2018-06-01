@@ -2,7 +2,6 @@
 package id.brainmaster.iso20022.model;
 
 import java.math.BigDecimal;
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -54,43 +53,31 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "instgAgt",
     "instdAgt"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class GroupHeader70 {
 
     @XmlElement(name = "MsgId", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String msgId;
     @XmlElement(name = "CreDtTm", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
     @XmlSchemaType(name = "dateTime")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected XMLGregorianCalendar creDtTm;
     @XmlElement(name = "BtchBookg", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected Boolean btchBookg;
     @XmlElement(name = "NbOfTxs", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String nbOfTxs;
     @XmlElement(name = "CtrlSum", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BigDecimal ctrlSum;
     @XmlElement(name = "TtlIntrBkSttlmAmt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected ActiveCurrencyAndAmount ttlIntrBkSttlmAmt;
     @XmlElement(name = "IntrBkSttlmDt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
     @XmlSchemaType(name = "date")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected XMLGregorianCalendar intrBkSttlmDt;
     @XmlElement(name = "SttlmInf", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected SettlementInstruction4 sttlmInf;
     @XmlElement(name = "PmtTpInf", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected PaymentTypeInformation21 pmtTpInf;
     @XmlElement(name = "InstgAgt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BranchAndFinancialInstitutionIdentification5 instgAgt;
     @XmlElement(name = "InstdAgt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BranchAndFinancialInstitutionIdentification5 instdAgt;
 
     /**
@@ -101,7 +88,6 @@ public class GroupHeader70 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getMsgId() {
         return msgId;
     }
@@ -114,7 +100,6 @@ public class GroupHeader70 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setMsgId(String value) {
         this.msgId = value;
     }
@@ -127,7 +112,6 @@ public class GroupHeader70 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public XMLGregorianCalendar getCreDtTm() {
         return creDtTm;
     }
@@ -140,7 +124,6 @@ public class GroupHeader70 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCreDtTm(XMLGregorianCalendar value) {
         this.creDtTm = value;
     }
@@ -153,7 +136,6 @@ public class GroupHeader70 {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public Boolean isBtchBookg() {
         return btchBookg;
     }
@@ -166,7 +148,6 @@ public class GroupHeader70 {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setBtchBookg(Boolean value) {
         this.btchBookg = value;
     }
@@ -179,7 +160,6 @@ public class GroupHeader70 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getNbOfTxs() {
         return nbOfTxs;
     }
@@ -192,7 +172,6 @@ public class GroupHeader70 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setNbOfTxs(String value) {
         this.nbOfTxs = value;
     }
@@ -205,7 +184,6 @@ public class GroupHeader70 {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BigDecimal getCtrlSum() {
         return ctrlSum;
     }
@@ -218,7 +196,6 @@ public class GroupHeader70 {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCtrlSum(BigDecimal value) {
         this.ctrlSum = value;
     }
@@ -231,7 +208,6 @@ public class GroupHeader70 {
      *     {@link ActiveCurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public ActiveCurrencyAndAmount getTtlIntrBkSttlmAmt() {
         return ttlIntrBkSttlmAmt;
     }
@@ -244,7 +220,6 @@ public class GroupHeader70 {
      *     {@link ActiveCurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTtlIntrBkSttlmAmt(ActiveCurrencyAndAmount value) {
         this.ttlIntrBkSttlmAmt = value;
     }
@@ -257,7 +232,6 @@ public class GroupHeader70 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public XMLGregorianCalendar getIntrBkSttlmDt() {
         return intrBkSttlmDt;
     }
@@ -270,7 +244,6 @@ public class GroupHeader70 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setIntrBkSttlmDt(XMLGregorianCalendar value) {
         this.intrBkSttlmDt = value;
     }
@@ -283,7 +256,6 @@ public class GroupHeader70 {
      *     {@link SettlementInstruction4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public SettlementInstruction4 getSttlmInf() {
         return sttlmInf;
     }
@@ -296,7 +268,6 @@ public class GroupHeader70 {
      *     {@link SettlementInstruction4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setSttlmInf(SettlementInstruction4 value) {
         this.sttlmInf = value;
     }
@@ -309,7 +280,6 @@ public class GroupHeader70 {
      *     {@link PaymentTypeInformation21 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public PaymentTypeInformation21 getPmtTpInf() {
         return pmtTpInf;
     }
@@ -322,7 +292,6 @@ public class GroupHeader70 {
      *     {@link PaymentTypeInformation21 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setPmtTpInf(PaymentTypeInformation21 value) {
         this.pmtTpInf = value;
     }
@@ -335,7 +304,6 @@ public class GroupHeader70 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BranchAndFinancialInstitutionIdentification5 getInstgAgt() {
         return instgAgt;
     }
@@ -348,7 +316,6 @@ public class GroupHeader70 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setInstgAgt(BranchAndFinancialInstitutionIdentification5 value) {
         this.instgAgt = value;
     }
@@ -361,7 +328,6 @@ public class GroupHeader70 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BranchAndFinancialInstitutionIdentification5 getInstdAgt() {
         return instdAgt;
     }
@@ -374,7 +340,6 @@ public class GroupHeader70 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setInstdAgt(BranchAndFinancialInstitutionIdentification5 value) {
         this.instdAgt = value;
     }

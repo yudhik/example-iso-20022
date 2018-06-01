@@ -3,7 +3,6 @@ package id.brainmaster.iso20022.model;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -49,35 +48,25 @@ import javax.xml.bind.annotation.XmlType;
     "tradgPty",
     "prtry"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class TransactionParties4 {
 
     @XmlElement(name = "InitgPty", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected Party35Choice initgPty;
     @XmlElement(name = "Dbtr", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected Party35Choice dbtr;
     @XmlElement(name = "DbtrAcct", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CashAccount24 dbtrAcct;
     @XmlElement(name = "UltmtDbtr", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected Party35Choice ultmtDbtr;
     @XmlElement(name = "Cdtr", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected Party35Choice cdtr;
     @XmlElement(name = "CdtrAcct", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CashAccount24 cdtrAcct;
     @XmlElement(name = "UltmtCdtr", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected Party35Choice ultmtCdtr;
     @XmlElement(name = "TradgPty", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected Party35Choice tradgPty;
     @XmlElement(name = "Prtry", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<ProprietaryParty4> prtry;
 
     /**
@@ -88,7 +77,6 @@ public class TransactionParties4 {
      *     {@link Party35Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public Party35Choice getInitgPty() {
         return initgPty;
     }
@@ -101,7 +89,6 @@ public class TransactionParties4 {
      *     {@link Party35Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setInitgPty(Party35Choice value) {
         this.initgPty = value;
     }
@@ -114,7 +101,6 @@ public class TransactionParties4 {
      *     {@link Party35Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public Party35Choice getDbtr() {
         return dbtr;
     }
@@ -127,7 +113,6 @@ public class TransactionParties4 {
      *     {@link Party35Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setDbtr(Party35Choice value) {
         this.dbtr = value;
     }
@@ -140,7 +125,6 @@ public class TransactionParties4 {
      *     {@link CashAccount24 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CashAccount24 getDbtrAcct() {
         return dbtrAcct;
     }
@@ -153,7 +137,6 @@ public class TransactionParties4 {
      *     {@link CashAccount24 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setDbtrAcct(CashAccount24 value) {
         this.dbtrAcct = value;
     }
@@ -166,7 +149,6 @@ public class TransactionParties4 {
      *     {@link Party35Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public Party35Choice getUltmtDbtr() {
         return ultmtDbtr;
     }
@@ -179,7 +161,6 @@ public class TransactionParties4 {
      *     {@link Party35Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setUltmtDbtr(Party35Choice value) {
         this.ultmtDbtr = value;
     }
@@ -192,7 +173,6 @@ public class TransactionParties4 {
      *     {@link Party35Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public Party35Choice getCdtr() {
         return cdtr;
     }
@@ -205,7 +185,6 @@ public class TransactionParties4 {
      *     {@link Party35Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCdtr(Party35Choice value) {
         this.cdtr = value;
     }
@@ -218,7 +197,6 @@ public class TransactionParties4 {
      *     {@link CashAccount24 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CashAccount24 getCdtrAcct() {
         return cdtrAcct;
     }
@@ -231,7 +209,6 @@ public class TransactionParties4 {
      *     {@link CashAccount24 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCdtrAcct(CashAccount24 value) {
         this.cdtrAcct = value;
     }
@@ -244,7 +221,6 @@ public class TransactionParties4 {
      *     {@link Party35Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public Party35Choice getUltmtCdtr() {
         return ultmtCdtr;
     }
@@ -257,7 +233,6 @@ public class TransactionParties4 {
      *     {@link Party35Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setUltmtCdtr(Party35Choice value) {
         this.ultmtCdtr = value;
     }
@@ -270,7 +245,6 @@ public class TransactionParties4 {
      *     {@link Party35Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public Party35Choice getTradgPty() {
         return tradgPty;
     }
@@ -283,7 +257,6 @@ public class TransactionParties4 {
      *     {@link Party35Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTradgPty(Party35Choice value) {
         this.tradgPty = value;
     }
@@ -310,7 +283,6 @@ public class TransactionParties4 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<ProprietaryParty4> getPrtry() {
         if (prtry == null) {
             prtry = new ArrayList<ProprietaryParty4>();

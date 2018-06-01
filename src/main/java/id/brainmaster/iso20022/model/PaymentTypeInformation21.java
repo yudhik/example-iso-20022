@@ -1,7 +1,6 @@
 
 package id.brainmaster.iso20022.model;
 
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -40,25 +39,19 @@ import javax.xml.bind.annotation.XmlType;
     "lclInstrm",
     "ctgyPurp"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class PaymentTypeInformation21 {
 
     @XmlElement(name = "InstrPrty", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected Priority2Code instrPrty;
     @XmlElement(name = "ClrChanl", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected ClearingChannel2Code clrChanl;
     @XmlElement(name = "SvcLvl", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected ServiceLevel8Choice svcLvl;
     @XmlElement(name = "LclInstrm", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected LocalInstrument2Choice lclInstrm;
     @XmlElement(name = "CtgyPurp", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CategoryPurpose1Choice ctgyPurp;
 
     /**
@@ -69,7 +62,6 @@ public class PaymentTypeInformation21 {
      *     {@link Priority2Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public Priority2Code getInstrPrty() {
         return instrPrty;
     }
@@ -82,7 +74,6 @@ public class PaymentTypeInformation21 {
      *     {@link Priority2Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setInstrPrty(Priority2Code value) {
         this.instrPrty = value;
     }
@@ -95,7 +86,6 @@ public class PaymentTypeInformation21 {
      *     {@link ClearingChannel2Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public ClearingChannel2Code getClrChanl() {
         return clrChanl;
     }
@@ -108,7 +98,6 @@ public class PaymentTypeInformation21 {
      *     {@link ClearingChannel2Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setClrChanl(ClearingChannel2Code value) {
         this.clrChanl = value;
     }
@@ -121,7 +110,6 @@ public class PaymentTypeInformation21 {
      *     {@link ServiceLevel8Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public ServiceLevel8Choice getSvcLvl() {
         return svcLvl;
     }
@@ -134,7 +122,6 @@ public class PaymentTypeInformation21 {
      *     {@link ServiceLevel8Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setSvcLvl(ServiceLevel8Choice value) {
         this.svcLvl = value;
     }
@@ -147,7 +134,6 @@ public class PaymentTypeInformation21 {
      *     {@link LocalInstrument2Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public LocalInstrument2Choice getLclInstrm() {
         return lclInstrm;
     }
@@ -160,7 +146,6 @@ public class PaymentTypeInformation21 {
      *     {@link LocalInstrument2Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setLclInstrm(LocalInstrument2Choice value) {
         this.lclInstrm = value;
     }
@@ -173,7 +158,6 @@ public class PaymentTypeInformation21 {
      *     {@link CategoryPurpose1Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CategoryPurpose1Choice getCtgyPurp() {
         return ctgyPurp;
     }
@@ -186,7 +170,6 @@ public class PaymentTypeInformation21 {
      *     {@link CategoryPurpose1Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCtgyPurp(CategoryPurpose1Choice value) {
         this.ctgyPurp = value;
     }

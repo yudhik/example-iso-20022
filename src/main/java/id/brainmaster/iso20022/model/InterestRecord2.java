@@ -1,7 +1,6 @@
 
 package id.brainmaster.iso20022.model;
 
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -44,30 +43,22 @@ import javax.xml.bind.annotation.XmlType;
     "rsn",
     "tax"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class InterestRecord2 {
 
     @XmlElement(name = "Amt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected ActiveOrHistoricCurrencyAndAmount amt;
     @XmlElement(name = "CdtDbtInd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CreditDebitCode cdtDbtInd;
     @XmlElement(name = "Tp", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected InterestType1Choice tp;
     @XmlElement(name = "Rate", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected Rate4 rate;
     @XmlElement(name = "FrToDt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected DateTimePeriod1 frToDt;
     @XmlElement(name = "Rsn", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String rsn;
     @XmlElement(name = "Tax", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected TaxCharges2 tax;
 
     /**
@@ -78,7 +69,6 @@ public class InterestRecord2 {
      *     {@link ActiveOrHistoricCurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public ActiveOrHistoricCurrencyAndAmount getAmt() {
         return amt;
     }
@@ -91,7 +81,6 @@ public class InterestRecord2 {
      *     {@link ActiveOrHistoricCurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAmt(ActiveOrHistoricCurrencyAndAmount value) {
         this.amt = value;
     }
@@ -104,7 +93,6 @@ public class InterestRecord2 {
      *     {@link CreditDebitCode }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CreditDebitCode getCdtDbtInd() {
         return cdtDbtInd;
     }
@@ -117,7 +105,6 @@ public class InterestRecord2 {
      *     {@link CreditDebitCode }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCdtDbtInd(CreditDebitCode value) {
         this.cdtDbtInd = value;
     }
@@ -130,7 +117,6 @@ public class InterestRecord2 {
      *     {@link InterestType1Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public InterestType1Choice getTp() {
         return tp;
     }
@@ -143,7 +129,6 @@ public class InterestRecord2 {
      *     {@link InterestType1Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTp(InterestType1Choice value) {
         this.tp = value;
     }
@@ -156,7 +141,6 @@ public class InterestRecord2 {
      *     {@link Rate4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public Rate4 getRate() {
         return rate;
     }
@@ -169,7 +153,6 @@ public class InterestRecord2 {
      *     {@link Rate4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setRate(Rate4 value) {
         this.rate = value;
     }
@@ -182,7 +165,6 @@ public class InterestRecord2 {
      *     {@link DateTimePeriod1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public DateTimePeriod1 getFrToDt() {
         return frToDt;
     }
@@ -195,7 +177,6 @@ public class InterestRecord2 {
      *     {@link DateTimePeriod1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setFrToDt(DateTimePeriod1 value) {
         this.frToDt = value;
     }
@@ -208,7 +189,6 @@ public class InterestRecord2 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getRsn() {
         return rsn;
     }
@@ -221,7 +201,6 @@ public class InterestRecord2 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setRsn(String value) {
         this.rsn = value;
     }
@@ -234,7 +213,6 @@ public class InterestRecord2 {
      *     {@link TaxCharges2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public TaxCharges2 getTax() {
         return tax;
     }
@@ -247,7 +225,6 @@ public class InterestRecord2 {
      *     {@link TaxCharges2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTax(TaxCharges2 value) {
         this.tax = value;
     }

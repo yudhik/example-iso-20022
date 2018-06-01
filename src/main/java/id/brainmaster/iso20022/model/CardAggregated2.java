@@ -1,7 +1,6 @@
 
 package id.brainmaster.iso20022.model;
 
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -40,24 +39,18 @@ import javax.xml.bind.annotation.XmlType;
     "seqNbRg",
     "txDtRg"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class CardAggregated2 {
 
     @XmlElement(name = "AddtlSvc", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CardPaymentServiceType2Code addtlSvc;
     @XmlElement(name = "TxCtgy", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String txCtgy;
     @XmlElement(name = "SaleRcncltnId", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String saleRcncltnId;
     @XmlElement(name = "SeqNbRg", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CardSequenceNumberRange1 seqNbRg;
     @XmlElement(name = "TxDtRg", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected DateOrDateTimePeriod1Choice txDtRg;
 
     /**
@@ -68,7 +61,6 @@ public class CardAggregated2 {
      *     {@link CardPaymentServiceType2Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CardPaymentServiceType2Code getAddtlSvc() {
         return addtlSvc;
     }
@@ -81,7 +73,6 @@ public class CardAggregated2 {
      *     {@link CardPaymentServiceType2Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAddtlSvc(CardPaymentServiceType2Code value) {
         this.addtlSvc = value;
     }
@@ -94,7 +85,6 @@ public class CardAggregated2 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getTxCtgy() {
         return txCtgy;
     }
@@ -107,7 +97,6 @@ public class CardAggregated2 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTxCtgy(String value) {
         this.txCtgy = value;
     }
@@ -120,7 +109,6 @@ public class CardAggregated2 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getSaleRcncltnId() {
         return saleRcncltnId;
     }
@@ -133,7 +121,6 @@ public class CardAggregated2 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setSaleRcncltnId(String value) {
         this.saleRcncltnId = value;
     }
@@ -146,7 +133,6 @@ public class CardAggregated2 {
      *     {@link CardSequenceNumberRange1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CardSequenceNumberRange1 getSeqNbRg() {
         return seqNbRg;
     }
@@ -159,7 +145,6 @@ public class CardAggregated2 {
      *     {@link CardSequenceNumberRange1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setSeqNbRg(CardSequenceNumberRange1 value) {
         this.seqNbRg = value;
     }
@@ -172,7 +157,6 @@ public class CardAggregated2 {
      *     {@link DateOrDateTimePeriod1Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public DateOrDateTimePeriod1Choice getTxDtRg() {
         return txDtRg;
     }
@@ -185,7 +169,6 @@ public class CardAggregated2 {
      *     {@link DateOrDateTimePeriod1Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTxDtRg(DateOrDateTimePeriod1Choice value) {
         this.txDtRg = value;
     }

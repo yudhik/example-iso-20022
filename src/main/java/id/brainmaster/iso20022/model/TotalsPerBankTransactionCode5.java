@@ -4,7 +4,6 @@ package id.brainmaster.iso20022.model;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -50,35 +49,25 @@ import javax.xml.bind.annotation.XmlType;
     "avlbty",
     "dt"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class TotalsPerBankTransactionCode5 {
 
     @XmlElement(name = "NbOfNtries", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String nbOfNtries;
     @XmlElement(name = "Sum", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BigDecimal sum;
     @XmlElement(name = "TtlNetNtry", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected AmountAndDirection35 ttlNetNtry;
     @XmlElement(name = "CdtNtries", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected NumberAndSumOfTransactions1 cdtNtries;
     @XmlElement(name = "DbtNtries", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected NumberAndSumOfTransactions1 dbtNtries;
     @XmlElement(name = "FcstInd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected Boolean fcstInd;
     @XmlElement(name = "BkTxCd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BankTransactionCodeStructure4 bkTxCd;
     @XmlElement(name = "Avlbty", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<CashAvailability1> avlbty;
     @XmlElement(name = "Dt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected DateAndDateTime2Choice dt;
 
     /**
@@ -89,7 +78,6 @@ public class TotalsPerBankTransactionCode5 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getNbOfNtries() {
         return nbOfNtries;
     }
@@ -102,7 +90,6 @@ public class TotalsPerBankTransactionCode5 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setNbOfNtries(String value) {
         this.nbOfNtries = value;
     }
@@ -115,7 +102,6 @@ public class TotalsPerBankTransactionCode5 {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BigDecimal getSum() {
         return sum;
     }
@@ -128,7 +114,6 @@ public class TotalsPerBankTransactionCode5 {
      *     {@link BigDecimal }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setSum(BigDecimal value) {
         this.sum = value;
     }
@@ -141,7 +126,6 @@ public class TotalsPerBankTransactionCode5 {
      *     {@link AmountAndDirection35 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public AmountAndDirection35 getTtlNetNtry() {
         return ttlNetNtry;
     }
@@ -154,7 +138,6 @@ public class TotalsPerBankTransactionCode5 {
      *     {@link AmountAndDirection35 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTtlNetNtry(AmountAndDirection35 value) {
         this.ttlNetNtry = value;
     }
@@ -167,7 +150,6 @@ public class TotalsPerBankTransactionCode5 {
      *     {@link NumberAndSumOfTransactions1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public NumberAndSumOfTransactions1 getCdtNtries() {
         return cdtNtries;
     }
@@ -180,7 +162,6 @@ public class TotalsPerBankTransactionCode5 {
      *     {@link NumberAndSumOfTransactions1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCdtNtries(NumberAndSumOfTransactions1 value) {
         this.cdtNtries = value;
     }
@@ -193,7 +174,6 @@ public class TotalsPerBankTransactionCode5 {
      *     {@link NumberAndSumOfTransactions1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public NumberAndSumOfTransactions1 getDbtNtries() {
         return dbtNtries;
     }
@@ -206,7 +186,6 @@ public class TotalsPerBankTransactionCode5 {
      *     {@link NumberAndSumOfTransactions1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setDbtNtries(NumberAndSumOfTransactions1 value) {
         this.dbtNtries = value;
     }
@@ -219,7 +198,6 @@ public class TotalsPerBankTransactionCode5 {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public Boolean isFcstInd() {
         return fcstInd;
     }
@@ -232,7 +210,6 @@ public class TotalsPerBankTransactionCode5 {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setFcstInd(Boolean value) {
         this.fcstInd = value;
     }
@@ -245,7 +222,6 @@ public class TotalsPerBankTransactionCode5 {
      *     {@link BankTransactionCodeStructure4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BankTransactionCodeStructure4 getBkTxCd() {
         return bkTxCd;
     }
@@ -258,7 +234,6 @@ public class TotalsPerBankTransactionCode5 {
      *     {@link BankTransactionCodeStructure4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setBkTxCd(BankTransactionCodeStructure4 value) {
         this.bkTxCd = value;
     }
@@ -285,7 +260,6 @@ public class TotalsPerBankTransactionCode5 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<CashAvailability1> getAvlbty() {
         if (avlbty == null) {
             avlbty = new ArrayList<CashAvailability1>();
@@ -301,7 +275,6 @@ public class TotalsPerBankTransactionCode5 {
      *     {@link DateAndDateTime2Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public DateAndDateTime2Choice getDt() {
         return dt;
     }
@@ -314,7 +287,6 @@ public class TotalsPerBankTransactionCode5 {
      *     {@link DateAndDateTime2Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setDt(DateAndDateTime2Choice value) {
         this.dt = value;
     }

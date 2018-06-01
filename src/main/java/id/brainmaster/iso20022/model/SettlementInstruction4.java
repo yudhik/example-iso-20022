@@ -1,7 +1,6 @@
 
 package id.brainmaster.iso20022.model;
 
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -48,36 +47,26 @@ import javax.xml.bind.annotation.XmlType;
     "thrdRmbrsmntAgt",
     "thrdRmbrsmntAgtAcct"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class SettlementInstruction4 {
 
     @XmlElement(name = "SttlmMtd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected SettlementMethod1Code sttlmMtd;
     @XmlElement(name = "SttlmAcct", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CashAccount24 sttlmAcct;
     @XmlElement(name = "ClrSys", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected ClearingSystemIdentification3Choice clrSys;
     @XmlElement(name = "InstgRmbrsmntAgt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BranchAndFinancialInstitutionIdentification5 instgRmbrsmntAgt;
     @XmlElement(name = "InstgRmbrsmntAgtAcct", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CashAccount24 instgRmbrsmntAgtAcct;
     @XmlElement(name = "InstdRmbrsmntAgt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BranchAndFinancialInstitutionIdentification5 instdRmbrsmntAgt;
     @XmlElement(name = "InstdRmbrsmntAgtAcct", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CashAccount24 instdRmbrsmntAgtAcct;
     @XmlElement(name = "ThrdRmbrsmntAgt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BranchAndFinancialInstitutionIdentification5 thrdRmbrsmntAgt;
     @XmlElement(name = "ThrdRmbrsmntAgtAcct", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CashAccount24 thrdRmbrsmntAgtAcct;
 
     /**
@@ -88,7 +77,6 @@ public class SettlementInstruction4 {
      *     {@link SettlementMethod1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public SettlementMethod1Code getSttlmMtd() {
         return sttlmMtd;
     }
@@ -101,7 +89,6 @@ public class SettlementInstruction4 {
      *     {@link SettlementMethod1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setSttlmMtd(SettlementMethod1Code value) {
         this.sttlmMtd = value;
     }
@@ -114,7 +101,6 @@ public class SettlementInstruction4 {
      *     {@link CashAccount24 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CashAccount24 getSttlmAcct() {
         return sttlmAcct;
     }
@@ -127,7 +113,6 @@ public class SettlementInstruction4 {
      *     {@link CashAccount24 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setSttlmAcct(CashAccount24 value) {
         this.sttlmAcct = value;
     }
@@ -140,7 +125,6 @@ public class SettlementInstruction4 {
      *     {@link ClearingSystemIdentification3Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public ClearingSystemIdentification3Choice getClrSys() {
         return clrSys;
     }
@@ -153,7 +137,6 @@ public class SettlementInstruction4 {
      *     {@link ClearingSystemIdentification3Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setClrSys(ClearingSystemIdentification3Choice value) {
         this.clrSys = value;
     }
@@ -166,7 +149,6 @@ public class SettlementInstruction4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BranchAndFinancialInstitutionIdentification5 getInstgRmbrsmntAgt() {
         return instgRmbrsmntAgt;
     }
@@ -179,7 +161,6 @@ public class SettlementInstruction4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setInstgRmbrsmntAgt(BranchAndFinancialInstitutionIdentification5 value) {
         this.instgRmbrsmntAgt = value;
     }
@@ -192,7 +173,6 @@ public class SettlementInstruction4 {
      *     {@link CashAccount24 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CashAccount24 getInstgRmbrsmntAgtAcct() {
         return instgRmbrsmntAgtAcct;
     }
@@ -205,7 +185,6 @@ public class SettlementInstruction4 {
      *     {@link CashAccount24 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setInstgRmbrsmntAgtAcct(CashAccount24 value) {
         this.instgRmbrsmntAgtAcct = value;
     }
@@ -218,7 +197,6 @@ public class SettlementInstruction4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BranchAndFinancialInstitutionIdentification5 getInstdRmbrsmntAgt() {
         return instdRmbrsmntAgt;
     }
@@ -231,7 +209,6 @@ public class SettlementInstruction4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setInstdRmbrsmntAgt(BranchAndFinancialInstitutionIdentification5 value) {
         this.instdRmbrsmntAgt = value;
     }
@@ -244,7 +221,6 @@ public class SettlementInstruction4 {
      *     {@link CashAccount24 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CashAccount24 getInstdRmbrsmntAgtAcct() {
         return instdRmbrsmntAgtAcct;
     }
@@ -257,7 +233,6 @@ public class SettlementInstruction4 {
      *     {@link CashAccount24 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setInstdRmbrsmntAgtAcct(CashAccount24 value) {
         this.instdRmbrsmntAgtAcct = value;
     }
@@ -270,7 +245,6 @@ public class SettlementInstruction4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BranchAndFinancialInstitutionIdentification5 getThrdRmbrsmntAgt() {
         return thrdRmbrsmntAgt;
     }
@@ -283,7 +257,6 @@ public class SettlementInstruction4 {
      *     {@link BranchAndFinancialInstitutionIdentification5 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setThrdRmbrsmntAgt(BranchAndFinancialInstitutionIdentification5 value) {
         this.thrdRmbrsmntAgt = value;
     }
@@ -296,7 +269,6 @@ public class SettlementInstruction4 {
      *     {@link CashAccount24 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CashAccount24 getThrdRmbrsmntAgtAcct() {
         return thrdRmbrsmntAgtAcct;
     }
@@ -309,7 +281,6 @@ public class SettlementInstruction4 {
      *     {@link CashAccount24 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setThrdRmbrsmntAgtAcct(CashAccount24 value) {
         this.thrdRmbrsmntAgtAcct = value;
     }

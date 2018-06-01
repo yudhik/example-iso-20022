@@ -1,13 +1,13 @@
 package id.brainmaster.iso20022.controller;
 
-import id.brainmaster.iso20022.model.Document;
-import id.brainmaster.iso20022.model.GroupHeader70;
+import id.brainmaster.iso20022.entity.Transaction;
+import id.brainmaster.iso20022.entity.TransactionKey;
+import id.brainmaster.iso20022.model.*;
 import id.brainmaster.iso20022.model.response.CreditTransferTransaction30Status;
 import id.brainmaster.iso20022.model.response.GenericSingleRestResponse;
 import id.brainmaster.iso20022.service.TransactionService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.cassandra.core.query.CassandraPageRequest;
 import org.springframework.data.domain.Pageable;
@@ -23,8 +23,11 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
 import java.io.StringReader;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 @RestController("/transaction")
 public class TransactionController {
@@ -47,64 +50,104 @@ public class TransactionController {
         return null;
     }
 
-    private GenericSingleRestResponse prepareResponseDocument(final Document document) {
-        GenericSingleRestResponse genericSingleRestResponse = new GenericSingleRestResponse();
-        final GroupHeader70 groupHeader = new GroupHeader70();
-        BeanUtils.copyProperties(document.getFIToFICstmrCdtTrf().getGrpHdr(), groupHeader);
-        genericSingleRestResponse.setGrpHdr(groupHeader);
-        return genericSingleRestResponse;
+    private Document preparePaymentStatusReportDocumentWithoutStatus(final Document document) throws DatatypeConfigurationException {
+        //Transaction status will be set during saving document to database
+        Document responseDocument = new Document();
+        FIToFICustomerCreditTransferV07 customerCreditTransfer = document.getFIToFICstmrCdtTrf();
+        FIToFIPaymentStatusReportV09 paymentStatusReport = new FIToFIPaymentStatusReportV09();
+
+        //setting document header
+        GroupHeader53 paymentStatusHeader = new GroupHeader53();
+        paymentStatusHeader.setMsgId(customerCreditTransfer.getGrpHdr().getMsgId());
+        GregorianCalendar calendar = new GregorianCalendar();
+        calendar.setTime(new Date());
+        try {
+            paymentStatusHeader.setCreDtTm(DatatypeFactory.newInstance().newXMLGregorianCalendar(calendar));
+        } catch (DatatypeConfigurationException e) {
+            LOG.error("could not create xml gregorian datetime");
+            throw e;
+        }
+        paymentStatusReport.setGrpHdr(paymentStatusHeader);
+
+        // setting original group header
+        OriginalGroupHeader13 originalGroupHeader = new OriginalGroupHeader13();
+        originalGroupHeader.setOrgnlMsgId(customerCreditTransfer.getGrpHdr().getMsgId());
+        originalGroupHeader.setOrgnlMsgNmId(customerCreditTransfer.getGrpHdr().getMsgId());
+        originalGroupHeader.setOrgnlCreDtTm(customerCreditTransfer.getGrpHdr().getCreDtTm());
+        originalGroupHeader.setOrgnlNbOfTxs(customerCreditTransfer.getGrpHdr().getNbOfTxs());
+        if (customerCreditTransfer.getGrpHdr().getCtrlSum() != null) {
+            originalGroupHeader.setOrgnlCtrlSum(customerCreditTransfer.getGrpHdr().getCtrlSum());
+        }
+        paymentStatusReport.getOrgnlGrpInfAndSts().add(originalGroupHeader);
+        return responseDocument;
     }
 
-    private GenericSingleRestResponse topup(final Document document, final String accountId,
-            final GenericSingleRestResponse genericSingleRestResponse) {
-        service.saveTopUpTransaction(document, accountId)
-                .forEach(transaction -> genericSingleRestResponse.getCdtTrfTxInfSts().add(
-                        new CreditTransferTransaction30Status(null, transaction.getEndToEndId(), transaction.getTransactionKey().getTransactionId(),
-                                null, true)));
-        return genericSingleRestResponse;
+    private Document topup(final Document sourceDocument, final String accountId,
+            final Document responseDocument) {
+        service.saveTopUpTransaction(sourceDocument, accountId)
+                .forEach(transaction -> {
+                    constructTransactionStatusResponse(responseDocument, transaction, ExternalPaymentTransactionStatusCode.ACCC);
+                });
+        return responseDocument;
+    }
+
+    private void constructTransactionStatusResponse(Document responseDocument, Transaction transaction,ExternalPaymentTransactionStatusCode statusCode) {
+        PaymentTransaction91 paymentTransactionStatus = new PaymentTransaction91();
+        paymentTransactionStatus.setOrgnlTxId(transaction.getTransactionKey().getTransactionId());
+        paymentTransactionStatus.setOrgnlEndToEndId(transaction.getEndToEndId());
+        paymentTransactionStatus.setTxSts(statusCode.name());
+        responseDocument.getFIToFIPmtStsRpt().getTxInfAndSts().add(paymentTransactionStatus);
     }
 
     @PostMapping(value = TOPUP_FOR_ACCOUNT_SYNC, consumes = {MediaType.APPLICATION_XML_VALUE}, produces = {MediaType.APPLICATION_XML_VALUE})
-    public GenericSingleRestResponse topup(@RequestBody String xmldocument, @PathVariable("accountId") String accountId) throws JAXBException {
+    public Document topup(@RequestBody String xmldocument, @PathVariable("accountId") String accountId) throws JAXBException, DatatypeConfigurationException {
         Document document = transformXmlToObject(xmldocument);
         LOG.debug("document size : " + document.getFIToFICstmrCdtTrf().getCdtTrfTxInf().size());
-        GenericSingleRestResponse genericSingleRestResponse = prepareResponseDocument(document);
-        return topup(document, accountId, genericSingleRestResponse);
+        Document responseDocument = preparePaymentStatusReportDocumentWithoutStatus(document);
+        return topup(document, accountId, responseDocument);
     }
 
     //TODO : later for account id we need to get it from authentication header
     @PostMapping(value = TOPUP_FOR_ACCOUNT_ASYNC, consumes = {MediaType.APPLICATION_XML_VALUE}, produces = {MediaType
             .APPLICATION_XML_VALUE})
-    public Flux<GenericSingleRestResponse> topupAsync(@RequestBody String xmldocument,
-            @PathVariable("accountId") String accountId) throws JAXBException {
+    public Flux<Document> topupAsync(@RequestBody String xmldocument,
+            @PathVariable("accountId") String accountId) throws JAXBException, DatatypeConfigurationException {
         Document document = transformXmlToObject(xmldocument);
         LOG.debug("document size : " + document.getFIToFICstmrCdtTrf().getCdtTrfTxInf().size());
-        GenericSingleRestResponse genericSingleRestResponse = prepareResponseDocument(document);
-        return topupAsync(document, accountId, genericSingleRestResponse);
+        Document responseDocument = preparePaymentStatusReportDocumentWithoutStatus(document);
+        return topupAsync(document, accountId, responseDocument);
     }
 
-    private Flux<GenericSingleRestResponse> topupAsync(final Document document, final String accountId,
-            final GenericSingleRestResponse genericSingleRestResponse) {
-        Flux.from(service.saveTopUpTransactionAsync(document, accountId)).log().map(transaction -> {
-            if (transaction != null) {
-                return new CreditTransferTransaction30Status(null, transaction.getEndToEndId(), transaction.getTransactionKey().getTransactionId(),
-                        null, true);
+    private Flux<Document> topupAsync(final Document document, final String accountId,
+            final Document responseDocument) {
+        Flux.from(service.saveTopUpTransactionAsync(document, accountId)).log().doOnEach(transactionSignal -> {
+            if (transactionSignal.isOnComplete()) {
+                constructTransactionStatusResponse(responseDocument, transactionSignal.get(), ExternalPaymentTransactionStatusCode.ACCC);
             }
-            return null;
-        }).doOnEach(creditTransferTransaction30StatusSignal -> {
-            genericSingleRestResponse.getCdtTrfTxInfSts().add(creditTransferTransaction30StatusSignal.get());
+            if (transactionSignal.isOnError()) {
+                if (transactionSignal.get() == null) {
+                    Transaction dummyTransaction = new Transaction(new TransactionKey(null, null, null), null, null, null, null, null, null, null,
+                            null,  null);
+                    constructTransactionStatusResponse(responseDocument, dummyTransaction, ExternalPaymentTransactionStatusCode.RJCT);
+                } else {
+                    constructTransactionStatusResponse(responseDocument, transactionSignal.get(), ExternalPaymentTransactionStatusCode.RJCT);
+                }
+            }
         }).subscribe();
-        return Flux.just(genericSingleRestResponse);
+        return Flux.just(responseDocument);
     }
 
     @PostMapping(value = "/account-statement/{accountId}", consumes = {MediaType.APPLICATION_XML_VALUE}, produces = {MediaType.APPLICATION_XML_VALUE})
-    public GenericSingleRestResponse transactionHistory(@RequestBody String xmldocument, @PathVariable("accountId") String accountId,
+    public GenericSingleRestResponse transactionHistory(@PathVariable("accountId") String accountId,
             @Param("start") long startDate, @Param("end") long endDate,
-            @Param("row") int row, @Param("page") int page) throws JAXBException {
-        Document document = transformXmlToObject(xmldocument);
-        LOG.debug("document size : " + document.getFIToFICstmrCdtTrf().getCdtTrfTxInf().size());
-        GenericSingleRestResponse genericSingleRestResponse = prepareResponseDocument(document);
-        return history(document, accountId, genericSingleRestResponse, new Date(startDate), new Date(endDate), CassandraPageRequest.of(page, row));
+            @Param("row") int row, @Param("page") int page) {
+        //TODO edit here
+        Document responseDocument = prepareDocumentBankToCustomerStatement(startDate, endDate, row, page);
+        return history(accountId, responseDocument, new Date(startDate), new Date(endDate), CassandraPageRequest.of(page, row));
+    }
+
+    private Document prepareDocumentBankToCustomerStatement(long startDate, long endDate, int row, int page) {
+
     }
 
     private Document transformXmlToObject(String xmldocument) throws JAXBException {

@@ -1,7 +1,6 @@
 
 package id.brainmaster.iso20022.model;
 
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -52,45 +51,33 @@ import javax.xml.bind.annotation.XmlType;
     "fllbckInd",
     "authntcnMtd"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class PaymentContext3 {
 
     @XmlElement(name = "CardPres", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected Boolean cardPres;
     @XmlElement(name = "CrdhldrPres", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected Boolean crdhldrPres;
     @XmlElement(name = "OnLineCntxt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected Boolean onLineCntxt;
     @XmlElement(name = "AttndncCntxt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected AttendanceContext1Code attndncCntxt;
     @XmlElement(name = "TxEnvt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected TransactionEnvironment1Code txEnvt;
     @XmlElement(name = "TxChanl", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected TransactionChannel1Code txChanl;
     @XmlElement(name = "AttndntMsgCpbl", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected Boolean attndntMsgCpbl;
     @XmlElement(name = "AttndntLang", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String attndntLang;
     @XmlElement(name = "CardDataNtryMd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CardDataReading1Code cardDataNtryMd;
     @XmlElement(name = "FllbckInd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected Boolean fllbckInd;
     @XmlElement(name = "AuthntcnMtd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CardholderAuthentication2 authntcnMtd;
 
     /**
@@ -101,7 +88,6 @@ public class PaymentContext3 {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public Boolean isCardPres() {
         return cardPres;
     }
@@ -114,7 +100,6 @@ public class PaymentContext3 {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCardPres(Boolean value) {
         this.cardPres = value;
     }
@@ -127,7 +112,6 @@ public class PaymentContext3 {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public Boolean isCrdhldrPres() {
         return crdhldrPres;
     }
@@ -140,7 +124,6 @@ public class PaymentContext3 {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCrdhldrPres(Boolean value) {
         this.crdhldrPres = value;
     }
@@ -153,7 +136,6 @@ public class PaymentContext3 {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public Boolean isOnLineCntxt() {
         return onLineCntxt;
     }
@@ -166,7 +148,6 @@ public class PaymentContext3 {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setOnLineCntxt(Boolean value) {
         this.onLineCntxt = value;
     }
@@ -179,7 +160,6 @@ public class PaymentContext3 {
      *     {@link AttendanceContext1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public AttendanceContext1Code getAttndncCntxt() {
         return attndncCntxt;
     }
@@ -192,7 +172,6 @@ public class PaymentContext3 {
      *     {@link AttendanceContext1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAttndncCntxt(AttendanceContext1Code value) {
         this.attndncCntxt = value;
     }
@@ -205,7 +184,6 @@ public class PaymentContext3 {
      *     {@link TransactionEnvironment1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public TransactionEnvironment1Code getTxEnvt() {
         return txEnvt;
     }
@@ -218,7 +196,6 @@ public class PaymentContext3 {
      *     {@link TransactionEnvironment1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTxEnvt(TransactionEnvironment1Code value) {
         this.txEnvt = value;
     }
@@ -231,7 +208,6 @@ public class PaymentContext3 {
      *     {@link TransactionChannel1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public TransactionChannel1Code getTxChanl() {
         return txChanl;
     }
@@ -244,7 +220,6 @@ public class PaymentContext3 {
      *     {@link TransactionChannel1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTxChanl(TransactionChannel1Code value) {
         this.txChanl = value;
     }
@@ -257,7 +232,6 @@ public class PaymentContext3 {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public Boolean isAttndntMsgCpbl() {
         return attndntMsgCpbl;
     }
@@ -270,7 +244,6 @@ public class PaymentContext3 {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAttndntMsgCpbl(Boolean value) {
         this.attndntMsgCpbl = value;
     }
@@ -283,7 +256,6 @@ public class PaymentContext3 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getAttndntLang() {
         return attndntLang;
     }
@@ -296,7 +268,6 @@ public class PaymentContext3 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAttndntLang(String value) {
         this.attndntLang = value;
     }
@@ -309,7 +280,6 @@ public class PaymentContext3 {
      *     {@link CardDataReading1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CardDataReading1Code getCardDataNtryMd() {
         return cardDataNtryMd;
     }
@@ -322,7 +292,6 @@ public class PaymentContext3 {
      *     {@link CardDataReading1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCardDataNtryMd(CardDataReading1Code value) {
         this.cardDataNtryMd = value;
     }
@@ -335,7 +304,6 @@ public class PaymentContext3 {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public Boolean isFllbckInd() {
         return fllbckInd;
     }
@@ -348,7 +316,6 @@ public class PaymentContext3 {
      *     {@link Boolean }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setFllbckInd(Boolean value) {
         this.fllbckInd = value;
     }
@@ -361,7 +328,6 @@ public class PaymentContext3 {
      *     {@link CardholderAuthentication2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CardholderAuthentication2 getAuthntcnMtd() {
         return authntcnMtd;
     }
@@ -374,7 +340,6 @@ public class PaymentContext3 {
      *     {@link CardholderAuthentication2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAuthntcnMtd(CardholderAuthentication2 value) {
         this.authntcnMtd = value;
     }

@@ -3,7 +3,6 @@ package id.brainmaster.iso20022.model;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -42,26 +41,20 @@ import javax.xml.bind.annotation.XmlType;
     "dispCpblties",
     "prtLineWidth"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class PointOfInteractionCapabilities1 {
 
     @XmlElement(name = "CardRdngCpblties", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<CardDataReading1Code> cardRdngCpblties;
     @XmlElement(name = "CrdhldrVrfctnCpblties", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<CardholderVerificationCapability1Code> crdhldrVrfctnCpblties;
     @XmlElement(name = "OnLineCpblties", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected OnLineCapability1Code onLineCpblties;
     @XmlElement(name = "DispCpblties", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<DisplayCapabilities1> dispCpblties;
     @XmlElement(name = "PrtLineWidth", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String prtLineWidth;
 
     /**
@@ -86,7 +79,6 @@ public class PointOfInteractionCapabilities1 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<CardDataReading1Code> getCardRdngCpblties() {
         if (cardRdngCpblties == null) {
             cardRdngCpblties = new ArrayList<CardDataReading1Code>();
@@ -116,7 +108,6 @@ public class PointOfInteractionCapabilities1 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<CardholderVerificationCapability1Code> getCrdhldrVrfctnCpblties() {
         if (crdhldrVrfctnCpblties == null) {
             crdhldrVrfctnCpblties = new ArrayList<CardholderVerificationCapability1Code>();
@@ -132,7 +123,6 @@ public class PointOfInteractionCapabilities1 {
      *     {@link OnLineCapability1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public OnLineCapability1Code getOnLineCpblties() {
         return onLineCpblties;
     }
@@ -145,7 +135,6 @@ public class PointOfInteractionCapabilities1 {
      *     {@link OnLineCapability1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setOnLineCpblties(OnLineCapability1Code value) {
         this.onLineCpblties = value;
     }
@@ -172,7 +161,6 @@ public class PointOfInteractionCapabilities1 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<DisplayCapabilities1> getDispCpblties() {
         if (dispCpblties == null) {
             dispCpblties = new ArrayList<DisplayCapabilities1>();
@@ -188,7 +176,6 @@ public class PointOfInteractionCapabilities1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getPrtLineWidth() {
         return prtLineWidth;
     }
@@ -201,7 +188,6 @@ public class PointOfInteractionCapabilities1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setPrtLineWidth(String value) {
         this.prtLineWidth = value;
     }

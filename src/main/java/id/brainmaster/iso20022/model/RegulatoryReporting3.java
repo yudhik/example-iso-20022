@@ -3,7 +3,6 @@ package id.brainmaster.iso20022.model;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -38,18 +37,14 @@ import javax.xml.bind.annotation.XmlType;
     "authrty",
     "dtls"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class RegulatoryReporting3 {
 
     @XmlElement(name = "DbtCdtRptgInd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected RegulatoryReportingType1Code dbtCdtRptgInd;
     @XmlElement(name = "Authrty", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected RegulatoryAuthority2 authrty;
     @XmlElement(name = "Dtls", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<StructuredRegulatoryReporting3> dtls;
 
     /**
@@ -60,7 +55,6 @@ public class RegulatoryReporting3 {
      *     {@link RegulatoryReportingType1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public RegulatoryReportingType1Code getDbtCdtRptgInd() {
         return dbtCdtRptgInd;
     }
@@ -73,7 +67,6 @@ public class RegulatoryReporting3 {
      *     {@link RegulatoryReportingType1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setDbtCdtRptgInd(RegulatoryReportingType1Code value) {
         this.dbtCdtRptgInd = value;
     }
@@ -86,7 +79,6 @@ public class RegulatoryReporting3 {
      *     {@link RegulatoryAuthority2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public RegulatoryAuthority2 getAuthrty() {
         return authrty;
     }
@@ -99,7 +91,6 @@ public class RegulatoryReporting3 {
      *     {@link RegulatoryAuthority2 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAuthrty(RegulatoryAuthority2 value) {
         this.authrty = value;
     }
@@ -126,7 +117,6 @@ public class RegulatoryReporting3 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<StructuredRegulatoryReporting3> getDtls() {
         if (dtls == null) {
             dtls = new ArrayList<StructuredRegulatoryReporting3>();

@@ -1,7 +1,6 @@
 
 package id.brainmaster.iso20022.model;
 
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -34,15 +33,12 @@ import javax.xml.bind.annotation.XmlType;
     "cscMgmt",
     "cscVal"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class CardSecurityInformation1 {
 
     @XmlElement(name = "CSCMgmt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CSCManagement1Code cscMgmt;
     @XmlElement(name = "CSCVal", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String cscVal;
 
     /**
@@ -53,7 +49,6 @@ public class CardSecurityInformation1 {
      *     {@link CSCManagement1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CSCManagement1Code getCSCMgmt() {
         return cscMgmt;
     }
@@ -66,7 +61,6 @@ public class CardSecurityInformation1 {
      *     {@link CSCManagement1Code }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCSCMgmt(CSCManagement1Code value) {
         this.cscMgmt = value;
     }
@@ -79,7 +73,6 @@ public class CardSecurityInformation1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getCSCVal() {
         return cscVal;
     }
@@ -92,7 +85,6 @@ public class CardSecurityInformation1 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCSCVal(String value) {
         this.cscVal = value;
     }

@@ -1,7 +1,6 @@
 
 package id.brainmaster.iso20022.model;
 
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -43,27 +42,20 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "orgnlBizQry",
     "addtlInf"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class GroupHeader73 {
 
     @XmlElement(name = "MsgId", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String msgId;
     @XmlElement(name = "CreDtTm", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022", required = true)
     @XmlSchemaType(name = "dateTime")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected XMLGregorianCalendar creDtTm;
     @XmlElement(name = "MsgRcpt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected PartyIdentification125 msgRcpt;
     @XmlElement(name = "MsgPgntn", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected Pagination1 msgPgntn;
     @XmlElement(name = "OrgnlBizQry", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected OriginalBusinessQuery1 orgnlBizQry;
     @XmlElement(name = "AddtlInf", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String addtlInf;
 
     /**
@@ -74,7 +66,6 @@ public class GroupHeader73 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getMsgId() {
         return msgId;
     }
@@ -87,7 +78,6 @@ public class GroupHeader73 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setMsgId(String value) {
         this.msgId = value;
     }
@@ -100,7 +90,6 @@ public class GroupHeader73 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public XMLGregorianCalendar getCreDtTm() {
         return creDtTm;
     }
@@ -113,7 +102,6 @@ public class GroupHeader73 {
      *     {@link XMLGregorianCalendar }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCreDtTm(XMLGregorianCalendar value) {
         this.creDtTm = value;
     }
@@ -126,7 +114,6 @@ public class GroupHeader73 {
      *     {@link PartyIdentification125 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public PartyIdentification125 getMsgRcpt() {
         return msgRcpt;
     }
@@ -139,7 +126,6 @@ public class GroupHeader73 {
      *     {@link PartyIdentification125 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setMsgRcpt(PartyIdentification125 value) {
         this.msgRcpt = value;
     }
@@ -152,7 +138,6 @@ public class GroupHeader73 {
      *     {@link Pagination1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public Pagination1 getMsgPgntn() {
         return msgPgntn;
     }
@@ -165,7 +150,6 @@ public class GroupHeader73 {
      *     {@link Pagination1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setMsgPgntn(Pagination1 value) {
         this.msgPgntn = value;
     }
@@ -178,7 +162,6 @@ public class GroupHeader73 {
      *     {@link OriginalBusinessQuery1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public OriginalBusinessQuery1 getOrgnlBizQry() {
         return orgnlBizQry;
     }
@@ -191,7 +174,6 @@ public class GroupHeader73 {
      *     {@link OriginalBusinessQuery1 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setOrgnlBizQry(OriginalBusinessQuery1 value) {
         this.orgnlBizQry = value;
     }
@@ -204,7 +186,6 @@ public class GroupHeader73 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getAddtlInf() {
         return addtlInf;
     }
@@ -217,7 +198,6 @@ public class GroupHeader73 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAddtlInf(String value) {
         this.addtlInf = value;
     }

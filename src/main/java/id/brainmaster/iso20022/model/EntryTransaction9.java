@@ -3,7 +3,6 @@ package id.brainmaster.iso20022.model;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.Generated;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -84,87 +83,60 @@ import javax.xml.bind.annotation.XmlType;
     "addtlTxInf",
     "splmtryData"
 })
-@Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
 public class EntryTransaction9 {
 
     @XmlElement(name = "Refs", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected TransactionReferences3 refs;
     @XmlElement(name = "Amt", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected ActiveOrHistoricCurrencyAndAmount amt;
     @XmlElement(name = "CdtDbtInd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
     @XmlSchemaType(name = "string")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CreditDebitCode cdtDbtInd;
     @XmlElement(name = "AmtDtls", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected AmountAndCurrencyExchange3 amtDtls;
     @XmlElement(name = "Avlbty", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<CashAvailability1> avlbty;
     @XmlElement(name = "BkTxCd", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected BankTransactionCodeStructure4 bkTxCd;
     @XmlElement(name = "Chrgs", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected Charges4 chrgs;
     @XmlElement(name = "Intrst", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected TransactionInterest4 intrst;
     @XmlElement(name = "RltdPties", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected TransactionParties4 rltdPties;
     @XmlElement(name = "RltdAgts", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected TransactionAgents4 rltdAgts;
     @XmlElement(name = "LclInstrm", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected LocalInstrument2Choice lclInstrm;
     @XmlElement(name = "Purp", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected Purpose2Choice purp;
     @XmlElement(name = "RltdRmtInf", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<RemittanceLocation4> rltdRmtInf;
     @XmlElement(name = "RmtInf", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected RemittanceInformation15 rmtInf;
     @XmlElement(name = "RltdDts", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected TransactionDates3 rltdDts;
     @XmlElement(name = "RltdPric", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected TransactionPrice4Choice rltdPric;
     @XmlElement(name = "RltdQties", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<TransactionQuantities2Choice> rltdQties;
     @XmlElement(name = "FinInstrmId", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected SecurityIdentification19 finInstrmId;
     @XmlElement(name = "Tax", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected TaxInformation6 tax;
     @XmlElement(name = "RtrInf", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected PaymentReturnReason3 rtrInf;
     @XmlElement(name = "CorpActn", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CorporateAction9 corpActn;
     @XmlElement(name = "SfkpgAcct", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected SecuritiesAccount19 sfkpgAcct;
     @XmlElement(name = "CshDpst", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<CashDeposit1> cshDpst;
     @XmlElement(name = "CardTx", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected CardTransaction16 cardTx;
     @XmlElement(name = "AddtlTxInf", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected String addtlTxInf;
     @XmlElement(name = "SplmtryData", namespace = "urn:iso:std:iso:20022:tech:xsd:iso20022")
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     protected List<SupplementaryData1> splmtryData;
 
     /**
@@ -175,7 +147,6 @@ public class EntryTransaction9 {
      *     {@link TransactionReferences3 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public TransactionReferences3 getRefs() {
         return refs;
     }
@@ -188,7 +159,6 @@ public class EntryTransaction9 {
      *     {@link TransactionReferences3 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setRefs(TransactionReferences3 value) {
         this.refs = value;
     }
@@ -201,7 +171,6 @@ public class EntryTransaction9 {
      *     {@link ActiveOrHistoricCurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public ActiveOrHistoricCurrencyAndAmount getAmt() {
         return amt;
     }
@@ -214,7 +183,6 @@ public class EntryTransaction9 {
      *     {@link ActiveOrHistoricCurrencyAndAmount }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAmt(ActiveOrHistoricCurrencyAndAmount value) {
         this.amt = value;
     }
@@ -227,7 +195,6 @@ public class EntryTransaction9 {
      *     {@link CreditDebitCode }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CreditDebitCode getCdtDbtInd() {
         return cdtDbtInd;
     }
@@ -240,7 +207,6 @@ public class EntryTransaction9 {
      *     {@link CreditDebitCode }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCdtDbtInd(CreditDebitCode value) {
         this.cdtDbtInd = value;
     }
@@ -253,7 +219,6 @@ public class EntryTransaction9 {
      *     {@link AmountAndCurrencyExchange3 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public AmountAndCurrencyExchange3 getAmtDtls() {
         return amtDtls;
     }
@@ -266,7 +231,6 @@ public class EntryTransaction9 {
      *     {@link AmountAndCurrencyExchange3 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAmtDtls(AmountAndCurrencyExchange3 value) {
         this.amtDtls = value;
     }
@@ -293,7 +257,6 @@ public class EntryTransaction9 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<CashAvailability1> getAvlbty() {
         if (avlbty == null) {
             avlbty = new ArrayList<CashAvailability1>();
@@ -309,7 +272,6 @@ public class EntryTransaction9 {
      *     {@link BankTransactionCodeStructure4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public BankTransactionCodeStructure4 getBkTxCd() {
         return bkTxCd;
     }
@@ -322,7 +284,6 @@ public class EntryTransaction9 {
      *     {@link BankTransactionCodeStructure4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setBkTxCd(BankTransactionCodeStructure4 value) {
         this.bkTxCd = value;
     }
@@ -335,7 +296,6 @@ public class EntryTransaction9 {
      *     {@link Charges4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public Charges4 getChrgs() {
         return chrgs;
     }
@@ -348,7 +308,6 @@ public class EntryTransaction9 {
      *     {@link Charges4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setChrgs(Charges4 value) {
         this.chrgs = value;
     }
@@ -361,7 +320,6 @@ public class EntryTransaction9 {
      *     {@link TransactionInterest4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public TransactionInterest4 getIntrst() {
         return intrst;
     }
@@ -374,7 +332,6 @@ public class EntryTransaction9 {
      *     {@link TransactionInterest4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setIntrst(TransactionInterest4 value) {
         this.intrst = value;
     }
@@ -387,7 +344,6 @@ public class EntryTransaction9 {
      *     {@link TransactionParties4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public TransactionParties4 getRltdPties() {
         return rltdPties;
     }
@@ -400,7 +356,6 @@ public class EntryTransaction9 {
      *     {@link TransactionParties4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setRltdPties(TransactionParties4 value) {
         this.rltdPties = value;
     }
@@ -413,7 +368,6 @@ public class EntryTransaction9 {
      *     {@link TransactionAgents4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public TransactionAgents4 getRltdAgts() {
         return rltdAgts;
     }
@@ -426,7 +380,6 @@ public class EntryTransaction9 {
      *     {@link TransactionAgents4 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setRltdAgts(TransactionAgents4 value) {
         this.rltdAgts = value;
     }
@@ -439,7 +392,6 @@ public class EntryTransaction9 {
      *     {@link LocalInstrument2Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public LocalInstrument2Choice getLclInstrm() {
         return lclInstrm;
     }
@@ -452,7 +404,6 @@ public class EntryTransaction9 {
      *     {@link LocalInstrument2Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setLclInstrm(LocalInstrument2Choice value) {
         this.lclInstrm = value;
     }
@@ -465,7 +416,6 @@ public class EntryTransaction9 {
      *     {@link Purpose2Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public Purpose2Choice getPurp() {
         return purp;
     }
@@ -478,7 +428,6 @@ public class EntryTransaction9 {
      *     {@link Purpose2Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setPurp(Purpose2Choice value) {
         this.purp = value;
     }
@@ -505,7 +454,6 @@ public class EntryTransaction9 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<RemittanceLocation4> getRltdRmtInf() {
         if (rltdRmtInf == null) {
             rltdRmtInf = new ArrayList<RemittanceLocation4>();
@@ -521,7 +469,6 @@ public class EntryTransaction9 {
      *     {@link RemittanceInformation15 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public RemittanceInformation15 getRmtInf() {
         return rmtInf;
     }
@@ -534,7 +481,6 @@ public class EntryTransaction9 {
      *     {@link RemittanceInformation15 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setRmtInf(RemittanceInformation15 value) {
         this.rmtInf = value;
     }
@@ -547,7 +493,6 @@ public class EntryTransaction9 {
      *     {@link TransactionDates3 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public TransactionDates3 getRltdDts() {
         return rltdDts;
     }
@@ -560,7 +505,6 @@ public class EntryTransaction9 {
      *     {@link TransactionDates3 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setRltdDts(TransactionDates3 value) {
         this.rltdDts = value;
     }
@@ -573,7 +517,6 @@ public class EntryTransaction9 {
      *     {@link TransactionPrice4Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public TransactionPrice4Choice getRltdPric() {
         return rltdPric;
     }
@@ -586,7 +529,6 @@ public class EntryTransaction9 {
      *     {@link TransactionPrice4Choice }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setRltdPric(TransactionPrice4Choice value) {
         this.rltdPric = value;
     }
@@ -613,7 +555,6 @@ public class EntryTransaction9 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<TransactionQuantities2Choice> getRltdQties() {
         if (rltdQties == null) {
             rltdQties = new ArrayList<TransactionQuantities2Choice>();
@@ -629,7 +570,6 @@ public class EntryTransaction9 {
      *     {@link SecurityIdentification19 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public SecurityIdentification19 getFinInstrmId() {
         return finInstrmId;
     }
@@ -642,7 +582,6 @@ public class EntryTransaction9 {
      *     {@link SecurityIdentification19 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setFinInstrmId(SecurityIdentification19 value) {
         this.finInstrmId = value;
     }
@@ -655,7 +594,6 @@ public class EntryTransaction9 {
      *     {@link TaxInformation6 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public TaxInformation6 getTax() {
         return tax;
     }
@@ -668,7 +606,6 @@ public class EntryTransaction9 {
      *     {@link TaxInformation6 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setTax(TaxInformation6 value) {
         this.tax = value;
     }
@@ -681,7 +618,6 @@ public class EntryTransaction9 {
      *     {@link PaymentReturnReason3 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public PaymentReturnReason3 getRtrInf() {
         return rtrInf;
     }
@@ -694,7 +630,6 @@ public class EntryTransaction9 {
      *     {@link PaymentReturnReason3 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setRtrInf(PaymentReturnReason3 value) {
         this.rtrInf = value;
     }
@@ -707,7 +642,6 @@ public class EntryTransaction9 {
      *     {@link CorporateAction9 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CorporateAction9 getCorpActn() {
         return corpActn;
     }
@@ -720,7 +654,6 @@ public class EntryTransaction9 {
      *     {@link CorporateAction9 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCorpActn(CorporateAction9 value) {
         this.corpActn = value;
     }
@@ -733,7 +666,6 @@ public class EntryTransaction9 {
      *     {@link SecuritiesAccount19 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public SecuritiesAccount19 getSfkpgAcct() {
         return sfkpgAcct;
     }
@@ -746,7 +678,6 @@ public class EntryTransaction9 {
      *     {@link SecuritiesAccount19 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setSfkpgAcct(SecuritiesAccount19 value) {
         this.sfkpgAcct = value;
     }
@@ -773,7 +704,6 @@ public class EntryTransaction9 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<CashDeposit1> getCshDpst() {
         if (cshDpst == null) {
             cshDpst = new ArrayList<CashDeposit1>();
@@ -789,7 +719,6 @@ public class EntryTransaction9 {
      *     {@link CardTransaction16 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public CardTransaction16 getCardTx() {
         return cardTx;
     }
@@ -802,7 +731,6 @@ public class EntryTransaction9 {
      *     {@link CardTransaction16 }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setCardTx(CardTransaction16 value) {
         this.cardTx = value;
     }
@@ -815,7 +743,6 @@ public class EntryTransaction9 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public String getAddtlTxInf() {
         return addtlTxInf;
     }
@@ -828,7 +755,6 @@ public class EntryTransaction9 {
      *     {@link String }
      *     
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public void setAddtlTxInf(String value) {
         this.addtlTxInf = value;
     }
@@ -855,7 +781,6 @@ public class EntryTransaction9 {
      * 
      * 
      */
-    @Generated(value = "com.sun.tools.internal.xjc.Driver", date = "2018-06-01T07:49:03+07:00", comments = "JAXB RI v2.2.8-b130911.1802")
     public List<SupplementaryData1> getSplmtryData() {
         if (splmtryData == null) {
             splmtryData = new ArrayList<SupplementaryData1>();
